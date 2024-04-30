@@ -1,0 +1,120 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Compiled: Dec 15 2023.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T120F324" ...
+
+***** Beginning stage routing graph generation ... *****
+Read ipin pattern from /home/kaush/efinity/2023.2/arch/./ipin_oph.xml
+Finished parsing ipin pattern file '/home/kaush/efinity/2023.2/arch/./ipin_oph.xdb'.
+Finished parsing switch_block file '/home/kaush/efinity/2023.2/arch/./sb_connectivity_subset.xdb'.
+BuildGraph process took 10.9424 seconds.
+	BuildGraph process took 10.54 seconds (approximately) in total CPU time.
+BuildGraph process virtual memory usage: begin = 1169.29 MB, end = 3036.17 MB, delta = 1866.88 MB
+BuildGraph process resident set memory usage: begin = 443.284 MB, end = 2310.93 MB, delta = 1867.65 MB
+	BuildGraph process peak resident set memory usage = 2523.63 MB
+check rr_graph process took 0.377032 seconds.
+	check rr_graph process took 0.37 seconds (approximately) in total CPU time.
+check rr_graph process virtual memory usage: begin = 3192.12 MB, end = 3218.24 MB, delta = 26.12 MB
+check rr_graph process resident set memory usage: begin = 2466.84 MB, end = 2492.95 MB, delta = 26.112 MB
+	check rr_graph process peak resident set memory usage = 2523.63 MB
+Generated 6653791 RR nodes and 25237401 RR edges
+This design has 0 global control net(s). See /home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.route.rpt for details.
+Routing graph took 11.6336 seconds.
+	Routing graph took 11.19 seconds (approximately) in total CPU time.
+Routing graph virtual memory usage: begin = 1169.29 MB, end = 3062.29 MB, delta = 1893 MB
+Routing graph resident set memory usage: begin = 443.028 MB, end = 2337.24 MB, delta = 1894.22 MB
+	Routing graph peak resident set memory usage = 2523.63 MB
+***** Ending stage routing graph generation *****
+
+***** Beginning stage routing ... *****
+
+No SDC file found.  Using default timing constraint of 1 ns.
+NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+
+
+ ---------      -------     --------------      -------------
+ Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+ ---------      -------     --------------      -------------
+         1         1125              7.574              0.223
+         2          245              7.574              0.184
+         3           79              7.574              0.138
+         4           24              7.574              0.122
+         5           17              7.574              0.161
+         6           12              7.595              0.114
+         7            4              7.739              0.112
+         8            4              7.595              0.113
+         9            1              7.816               0.11
+        10            0              7.841               0.11
+
+Successfully routed netlist after 10 routing iterations and 1434560 heapops
+Completed net delay value cross check successfully.
+
+***** Beginning stage routing check ... *****
+***** Ending stage routing check *****
+
+
+Serial number (magic cookie) for the routing is: 1558485902
+Netlist fully routed.
+
+Successfully created FPGA route file '/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.route'
+Routing took 2.07595 seconds.
+	Routing took 2.57 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 3062.29 MB, end = 3062.29 MB, delta = 0 MB
+Routing resident set memory usage: begin = 2337.24 MB, end = 2337.72 MB, delta = 0.476 MB
+	Routing peak resident set memory usage = 2704.48 MB
+***** Ending stage routing *****
+
+***** Beginning stage final timing analysis ... *****
+
+No SDC file found.  Using default timing constraint of 1 ns.
+NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+
+Maximum possible analyzed clocks frequency
+ Clock Name  Period (ns)  Frequency (MHz)     Edge
+    clk         7.961        125.612         (R-R)
+
+Geomean max period: 7.961
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+      clk              clk             1.000            -6.961           (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+      clk              clk             0.000            0.217            (R-R)
+
+WARNING(1): Clock domain between clk (rising) and clk (rising) may not meet (slack: -6.961 ns) the setup (max) timing requirement
+
+Write Timing Report to "/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.timing.rpt" ...
+final timing analysis took 0.0817402 seconds.
+	final timing analysis took 0.08 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 3062.29 MB, end = 3062.29 MB, delta = 0 MB
+final timing analysis resident set memory usage: begin = 2337.85 MB, end = 2338.23 MB, delta = 0.38 MB
+	final timing analysis peak resident set memory usage = 2704.48 MB
+***** Ending stage final timing analysis *****
+
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from '/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.interface.csv'.
+Successfully processed interface constraints file "/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.interface.csv".
+Finished writing bitstream file /home/kaush/Desktop/Efinity/WS2812_Protocol/work_pnr/WS2812_Protocol.lbf.
+Bitstream generation took 1.95497 seconds.
+	Bitstream generation took 1.89 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 3062.29 MB, end = 3116.54 MB, delta = 54.248 MB
+Bitstream generation resident set memory usage: begin = 2338.23 MB, end = 2393.09 MB, delta = 54.864 MB
+	Bitstream generation peak resident set memory usage = 2704.48 MB
+***** Ending stage bitstream generation *****
+
+The entire flow of EFX_PNR took 23.1817 seconds.
+	The entire flow of EFX_PNR took 24.95 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 172.916 MB, end = 2180.84 MB, delta = 2007.93 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 30.336 MB, end = 1457.4 MB, delta = 1427.07 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 2704.48 MB

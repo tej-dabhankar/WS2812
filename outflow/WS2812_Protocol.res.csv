@@ -1,0 +1,37 @@
+sep=\t
+Module Resource Usage Distribution Estimates
+Generated at: Apr 30, 2024 12:36:33
+
+Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module	         FFs	        ADDs	        LUTs	      RAMs	 DSP/MULTs
+ws2812_phy:ws2812_phy                                       	     250(0)	      30(0)	     377(0)	    25(0)	     0(0)	
+ +uartrx:test_uart_rx                                       	     28(28)	       0(0)	     60(60)	     0(0)	     0(0)	
+ +ws_wr_fifo:phy_fifo                                       	     104(0)	      30(0)	      48(0)	     1(0)	     0(0)	
+  +u_efx_fifo_top:efx_fifo_top_9387c6d4d1f0474eab9d36a0a0b9e8a2_renamed_due_excessive_length_1	     104(4)	      30(0)	      48(0)	     1(0)	     0(0)	
+   +xefx_fifo_ram:efx_fifo_ram_9387c6d4d1f0474eab9d36a0a0b9e8a2(OUTPUT_REG=0,RAM_MUX_RATIO=1)	       0(0)	       0(0)	       0(0)	     1(1)	     0(0)	
+   +xefx_fifo_ctl:efx_fifo_ctl_9387c6d4d1f0474eab9d36a0a0b9e8a2(SYNC_CLK=0,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)	    100(60)	     30(30)	     48(12)	     0(0)	     0(0)	
+    +genblk7.xrd2wr_bin2gray:efx_fifo_bin2gray_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=10)	       0(0)	       0(0)	       9(9)	     0(0)	     0(0)	
+    +genblk7.xrd2wr_addr_sync:efx_fifo_datasync_9387c6d4d1f0474eab9d36a0a0b9e8a2(STAGE=2,WIDTH=10)	     20(20)	       0(0)	       0(0)	     0(0)	     0(0)	
+    +genblk7.xrd2wr_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=10)	       0(0)	       0(0)	       9(1)	     0(0)	     0(0)	
+     +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=9)	       0(0)	       0(0)	       8(1)	     0(0)	     0(0)	
+      +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=8)	       0(0)	       0(0)	       7(1)	     0(0)	     0(0)	
+       +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=7)	       0(0)	       0(0)	       6(1)	     0(0)	     0(0)	
+        +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=6)	       0(0)	       0(0)	       5(1)	     0(0)	     0(0)	
+         +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2	       0(0)	       0(0)	       4(1)	     0(0)	     0(0)	
+          +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=4)	       0(0)	       0(0)	       3(1)	     0(0)	     0(0)	
+           +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=3)	       0(0)	       0(0)	       2(1)	     0(0)	     0(0)	
+            +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=2)	       0(0)	       0(0)	       1(1)	     0(0)	     0(0)	
+    +genblk7.wr2rd_bin2gray:efx_fifo_bin2gray_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=10)	       0(0)	       0(0)	       9(9)	     0(0)	     0(0)	
+    +genblk7.wr2rd_addr_sync:efx_fifo_datasync_9387c6d4d1f0474eab9d36a0a0b9e8a2(STAGE=2,WIDTH=10)	     20(20)	       0(0)	       0(0)	     0(0)	     0(0)	
+    +genblk7.wr2rd_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=10)	       0(0)	       0(0)	       9(1)	     0(0)	     0(0)	
+     +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=9)	       0(0)	       0(0)	       8(1)	     0(0)	     0(0)	
+      +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=8)	       0(0)	       0(0)	       7(1)	     0(0)	     0(0)	
+       +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=7)	       0(0)	       0(0)	       6(1)	     0(0)	     0(0)	
+        +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=6)	       0(0)	       0(0)	       5(1)	     0(0)	     0(0)	
+         +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2	       0(0)	       0(0)	       4(1)	     0(0)	     0(0)	
+          +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=4)	       0(0)	       0(0)	       3(1)	     0(0)	     0(0)	
+           +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=3)	       0(0)	       0(0)	       2(1)	     0(0)	     0(0)	
+            +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=2)	       0(0)	       0(0)	       1(1)	     0(0)	     0(0)	
+ +wsctrl:ws2812_ctrl                                        	     46(46)	       0(0)	     52(52)	     0(0)	     0(0)	
+ +wsinterface:ws2812_interface                              	     72(72)	       0(0)	   217(217)	   24(24)	     0(0)	

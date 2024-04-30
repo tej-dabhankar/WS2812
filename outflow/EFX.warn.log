@@ -1,0 +1,728 @@
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 10:40:52
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] port 'probe29' remains unconnected for this instance (VERI-1927) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:216)
+[EFX-0011 VERI-WARNING] input port 'probe29[0]' remains unconnected for this instance (VDB-1053) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0200 WARNING] Removing redundant signal : compared_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5586)
+[EFX-0200 WARNING] Removing redundant signal : mask_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5587)
+[EFX-0200 WARNING] Removing redundant signal : trigger_in. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5797)
+[EFX-0200 WARNING] Removing redundant signal : din[234]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4689)
+[EFX-0200 WARNING] Removing redundant signal : trig_out. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4968)
+[EFX-0200 WARNING] Removing redundant signal : trig_out_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4969)
+[EFX-0200 WARNING] Removing redundant signal : bscan_DRCK. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1122)
+[EFX-0200 WARNING] Removing redundant signal : bscan_RUNTEST. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1124)
+[EFX-0200 WARNING] Removing redundant signal : bscan_SEL. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1125)
+[EFX-0200 WARNING] Removing redundant signal : bscan_TMS. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1129)
+[EFX-0200 WARNING] Removing redundant signal : trig_in_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1140)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_out_ack=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe29[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe30[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe31[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe32[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe33[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe34[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe35[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe36[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe37[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe38[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_DRCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RUNTEST is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TMS is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 10:42:01
+///////////////////////////////////
+
+[EFX-0200 WARNING] Removing redundant signal : bit_xor. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:312)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[30]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[29]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[19]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[18]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[17]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[16]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[15]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[14]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[13]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo.a_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_phy.v:35)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$1' (32 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:27) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$2' (64 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:27) because size is too small (<=64)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 10:49:55
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] port 'probe29' remains unconnected for this instance (VERI-1927) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:216)
+[EFX-0011 VERI-WARNING] input port 'probe29[0]' remains unconnected for this instance (VDB-1053) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0200 WARNING] Removing redundant signal : compared_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5586)
+[EFX-0200 WARNING] Removing redundant signal : mask_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5587)
+[EFX-0200 WARNING] Removing redundant signal : trigger_in. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5797)
+[EFX-0200 WARNING] Removing redundant signal : din[234]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4689)
+[EFX-0200 WARNING] Removing redundant signal : trig_out. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4968)
+[EFX-0200 WARNING] Removing redundant signal : trig_out_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4969)
+[EFX-0200 WARNING] Removing redundant signal : bscan_DRCK. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1122)
+[EFX-0200 WARNING] Removing redundant signal : bscan_RUNTEST. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1124)
+[EFX-0200 WARNING] Removing redundant signal : bscan_SEL. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1125)
+[EFX-0200 WARNING] Removing redundant signal : bscan_TMS. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1129)
+[EFX-0200 WARNING] Removing redundant signal : trig_in_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1140)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_out_ack=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe29[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe30[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe31[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe32[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe33[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe34[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe35[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe36[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe37[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe38[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_DRCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RUNTEST is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TMS is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 10:51:04
+///////////////////////////////////
+
+[EFX-0200 WARNING] Removing redundant signal : bit_xor. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:312)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[30]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[29]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[19]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[18]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[17]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[16]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[15]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[14]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[13]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo.a_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_phy.v:35)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$1' (32 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:27) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$2' (64 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:27) because size is too small (<=64)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 11:05:37
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] port 'probe29' remains unconnected for this instance (VERI-1927) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:216)
+[EFX-0011 VERI-WARNING] input port 'probe29[0]' remains unconnected for this instance (VDB-1053) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0200 WARNING] Removing redundant signal : compared_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5586)
+[EFX-0200 WARNING] Removing redundant signal : mask_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5587)
+[EFX-0200 WARNING] Removing redundant signal : trigger_in. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5797)
+[EFX-0200 WARNING] Removing redundant signal : din[234]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4689)
+[EFX-0200 WARNING] Removing redundant signal : trig_out. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4968)
+[EFX-0200 WARNING] Removing redundant signal : trig_out_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4969)
+[EFX-0200 WARNING] Removing redundant signal : bscan_DRCK. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1122)
+[EFX-0200 WARNING] Removing redundant signal : bscan_RUNTEST. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1124)
+[EFX-0200 WARNING] Removing redundant signal : bscan_SEL. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1125)
+[EFX-0200 WARNING] Removing redundant signal : bscan_TMS. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1129)
+[EFX-0200 WARNING] Removing redundant signal : trig_in_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1140)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_out_ack=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe29[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe30[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe31[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe32[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe33[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe34[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe35[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe36[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe37[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe38[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_DRCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RUNTEST is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TMS is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 11:06:49
+///////////////////////////////////
+
+[EFX-0256 WARNING] The primary output port 'led' wire 'led' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : bit_xor. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:312)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[30]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[29]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[19]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[18]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[17]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[16]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[15]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[14]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[13]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo.a_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_phy.v:36)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$1' (32 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:27) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$2' (64 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:27) because size is too small (<=64)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 11:13:54
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] port 'probe29' remains unconnected for this instance (VERI-1927) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:216)
+[EFX-0011 VERI-WARNING] input port 'probe29[0]' remains unconnected for this instance (VDB-1053) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0200 WARNING] Removing redundant signal : compared_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5586)
+[EFX-0200 WARNING] Removing redundant signal : mask_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5587)
+[EFX-0200 WARNING] Removing redundant signal : trigger_in. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5797)
+[EFX-0200 WARNING] Removing redundant signal : din[234]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4689)
+[EFX-0200 WARNING] Removing redundant signal : trig_out. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4968)
+[EFX-0200 WARNING] Removing redundant signal : trig_out_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4969)
+[EFX-0200 WARNING] Removing redundant signal : bscan_DRCK. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1122)
+[EFX-0200 WARNING] Removing redundant signal : bscan_RUNTEST. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1124)
+[EFX-0200 WARNING] Removing redundant signal : bscan_SEL. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1125)
+[EFX-0200 WARNING] Removing redundant signal : bscan_TMS. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1129)
+[EFX-0200 WARNING] Removing redundant signal : trig_in_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1140)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_out_ack=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe29[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe30[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe31[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe32[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe33[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe34[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe35[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe36[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe37[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe38[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_DRCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RUNTEST is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TMS is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 11:15:03
+///////////////////////////////////
+
+[EFX-0256 WARNING] The primary output port 'led' wire 'led' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : bit_xor. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:312)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[30]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[29]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[19]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[18]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[17]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[16]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[15]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[14]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[13]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo.a_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_phy.v:36)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$1' (32 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:27) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$2' (64 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:27) because size is too small (<=64)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 12:05:12
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 12:33:19
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] port 'probe29' remains unconnected for this instance (VERI-1927) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:216)
+[EFX-0011 VERI-WARNING] input port 'probe29[0]' remains unconnected for this instance (VDB-1053) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0200 WARNING] Removing redundant signal : compared_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5586)
+[EFX-0200 WARNING] Removing redundant signal : mask_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5587)
+[EFX-0200 WARNING] Removing redundant signal : trigger_in. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5797)
+[EFX-0200 WARNING] Removing redundant signal : din[234]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4689)
+[EFX-0200 WARNING] Removing redundant signal : trig_out. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4968)
+[EFX-0200 WARNING] Removing redundant signal : trig_out_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4969)
+[EFX-0200 WARNING] Removing redundant signal : bscan_DRCK. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1122)
+[EFX-0200 WARNING] Removing redundant signal : bscan_RUNTEST. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1124)
+[EFX-0200 WARNING] Removing redundant signal : bscan_SEL. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1125)
+[EFX-0200 WARNING] Removing redundant signal : bscan_TMS. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1129)
+[EFX-0200 WARNING] Removing redundant signal : trig_in_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1140)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3552)
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_out_ack=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe29[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe30[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe31[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe32[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe33[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe34[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe35[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe36[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe37[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe38[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:167)
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_DRCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RUNTEST is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TMS is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 12:34:30
+///////////////////////////////////
+
+[EFX-0256 WARNING] The primary output port 'led' wire 'led' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : bit_xor. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:312)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[30]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[29]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[19]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[18]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[17]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[16]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[15]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[14]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[13]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo.a_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_phy.v:37)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$1' (32 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$2' (64 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28) because size is too small (<=64)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 12:58:48
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] port 'probe30' remains unconnected for this instance (VERI-1927) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:220)
+[EFX-0011 VERI-WARNING] input port 'probe30[0]' remains unconnected for this instance (VDB-1053) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:170)
+[EFX-0200 WARNING] Removing redundant signal : compared_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5590)
+[EFX-0200 WARNING] Removing redundant signal : mask_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5591)
+[EFX-0200 WARNING] Removing redundant signal : trigger_in. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5801)
+[EFX-0200 WARNING] Removing redundant signal : din[235]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4693)
+[EFX-0200 WARNING] Removing redundant signal : trig_out. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4972)
+[EFX-0200 WARNING] Removing redundant signal : trig_out_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4973)
+[EFX-0200 WARNING] Removing redundant signal : bscan_DRCK. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1126)
+[EFX-0200 WARNING] Removing redundant signal : bscan_RUNTEST. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1128)
+[EFX-0200 WARNING] Removing redundant signal : bscan_SEL. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1129)
+[EFX-0200 WARNING] Removing redundant signal : bscan_TMS. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1133)
+[EFX-0200 WARNING] Removing redundant signal : trig_in_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1144)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[29]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3556)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3556)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3556)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3556)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3556)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3556)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3556)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3556)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3556)
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_out_ack=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe30[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:170)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe31[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:170)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe32[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:170)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe33[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:170)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe34[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:170)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe35[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:170)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe36[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:170)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe37[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:170)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe38[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:170)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe39[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:170)
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_DRCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RUNTEST is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TMS is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 27, 2024 12:59:59
+///////////////////////////////////
+
+[EFX-0256 WARNING] The primary output port 'led' wire 'led' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : bit_xor. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:312)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[30]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[29]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[19]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[18]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[17]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[16]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[15]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[14]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[13]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo.a_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_phy.v:37)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$1' (32 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'wsinterface/led_reg__D$2' (64 bits) (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28) because size is too small (<=64)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 30, 2024 10:12:41
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] port 'probe32' remains unconnected for this instance (VERI-1927) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:228)
+[EFX-0011 VERI-WARNING] input port 'probe32[0]' remains unconnected for this instance (VDB-1053) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0200 WARNING] Removing redundant signal : compared_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5598)
+[EFX-0200 WARNING] Removing redundant signal : mask_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5599)
+[EFX-0200 WARNING] Removing redundant signal : trigger_in. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5809)
+[EFX-0200 WARNING] Removing redundant signal : din[324]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4701)
+[EFX-0200 WARNING] Removing redundant signal : trig_out. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4980)
+[EFX-0200 WARNING] Removing redundant signal : trig_out_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4981)
+[EFX-0200 WARNING] Removing redundant signal : bscan_DRCK. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1134)
+[EFX-0200 WARNING] Removing redundant signal : bscan_RUNTEST. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1136)
+[EFX-0200 WARNING] Removing redundant signal : bscan_SEL. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1137)
+[EFX-0200 WARNING] Removing redundant signal : bscan_TMS. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1141)
+[EFX-0200 WARNING] Removing redundant signal : trig_in_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1152)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[31]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[30]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[29]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_out_ack=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe32[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe33[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe34[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe35[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe36[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe37[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe38[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe39[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe40[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe41[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_DRCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RUNTEST is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TMS is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 30, 2024 10:13:28
+///////////////////////////////////
+
+[EFX-0256 WARNING] The primary output port 'led' wire 'led' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : bit_xor. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:312)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[30]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[29]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[19]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[18]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[17]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[16]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[15]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[14]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[13]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo.a_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_phy.v:40)
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[0]=1).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[1]=1).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[2]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[3]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[4]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[5]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[6]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[7]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[8]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[9]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[10]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[11]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[12]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[13]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[14]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[15]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[16]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[17]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[18]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[19]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[0]=1).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[1]=1).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[2]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[3]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[4]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[5]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[6]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[7]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[8]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[9]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[10]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[11]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[12]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[13]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[14]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[15]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[16]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[17]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[18]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[19]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[0]=1).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[1]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[2]=1).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[3]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[4]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[5]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[6]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[7]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[8]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[9]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[10]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[11]=0).
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$g03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$f03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$e03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$d03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$c03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$b03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$3'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 30, 2024 12:36:43
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] port 'probe32' remains unconnected for this instance (VERI-1927) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:228)
+[EFX-0011 VERI-WARNING] input port 'probe32[0]' remains unconnected for this instance (VDB-1053) (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0200 WARNING] Removing redundant signal : compared_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5598)
+[EFX-0200 WARNING] Removing redundant signal : mask_in[0]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5599)
+[EFX-0200 WARNING] Removing redundant signal : trigger_in. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:5809)
+[EFX-0200 WARNING] Removing redundant signal : din[324]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4701)
+[EFX-0200 WARNING] Removing redundant signal : trig_out. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4980)
+[EFX-0200 WARNING] Removing redundant signal : trig_out_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:4981)
+[EFX-0200 WARNING] Removing redundant signal : bscan_DRCK. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1134)
+[EFX-0200 WARNING] Removing redundant signal : bscan_RUNTEST. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1136)
+[EFX-0200 WARNING] Removing redundant signal : bscan_SEL. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1137)
+[EFX-0200 WARNING] Removing redundant signal : bscan_TMS. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1141)
+[EFX-0200 WARNING] Removing redundant signal : trig_in_ack. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:1152)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[31]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[30]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[29]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0200 WARNING] Removing redundant signal : mux_capture_cmp[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:3564)
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_out_ack=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe32[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe33[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe34[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe35[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe36[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe37[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe38[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe39[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe40[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe41[0]'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/work_dbg/debug_top.v:176)
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_DRCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RUNTEST is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TMS is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 30, 2024 12:37:27
+///////////////////////////////////
+
+[EFX-0256 WARNING] The primary output port 'led' wire 'led' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : bit_xor. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:312)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[30]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[29]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[28]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[27]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[26]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[25]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[24]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[23]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[22]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[21]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[20]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[19]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[18]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[17]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[16]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[15]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[14]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[13]. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:313)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo.a_rst_i'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_phy.v:40)
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[0]=1).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[1]=1).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[2]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[3]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[4]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[5]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[6]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[7]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[8]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[9]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[10]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[11]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[12]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[13]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[14]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[15]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[16]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[17]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[18]=0).
+[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[19]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[0]=1).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[1]=1).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[2]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[3]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[4]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[5]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[6]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[7]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[8]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[9]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[10]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[11]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[12]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[13]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[14]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[15]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[16]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[17]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[18]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[19]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[0]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[1]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[2]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[3]=1).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[4]=1).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[5]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[6]=1).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[7]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[8]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[9]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[10]=0).
+[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[11]=0).
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$g03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$f03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$e03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$d03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$c03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$b03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$3'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)

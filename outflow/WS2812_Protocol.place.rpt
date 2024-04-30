@@ -1,0 +1,59 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Date: Tue Apr 30 12:40:22 2024
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T120F324
+Top-level Entity Name: WS2812_Protocol
+Elapsed time for packing: 0 hours 0 minutes 0 seconds
+
+---------- Resource Summary (begin) ----------
+Inputs: 2 / 1076 (0.19%)
+Outputs: 2 / 1566 (0.13%)
+Clocks: 1 / 16 (6.25%)
+Logic Elements: 488 / 112128 (0.44%)
+	LE: LUTs/Adders: 409 / 112128 (0.36%)
+	LE: Registers: 250 / 107520 (0.23%)
+Memory Blocks: 25 / 1056 (2.37%)
+Multipliers: 0 / 320 (0.00%)
+---------- Resource Summary (end) ----------
+
+
+---------- Memory Block Information (begin) ----------
+
++---------------------------------------------+------+------------+-------------+------------+------------+
+|                    NAME                     | MODE | READ_WIDTH | WRITE_WIDTH | WRITE_MODE | OUTPUT_REG |
++---------------------------------------------+------+------------+-------------+------------+------------+
+|         wsinterface/led_reg__D$h0w1         | SDP  |     1      |      1      | READ_FIRST |   false    |
+| ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ram/ram | SDP  |     8      |      8      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0u12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0t12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0s12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0r12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0q12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0p12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0o12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0n12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0m12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0l12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0k12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0j12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0i12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0h12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0g12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0f12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0e12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0d12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0c12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0b12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|         wsinterface/led_reg__D$h012         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|        wsinterface/led_reg__D$h0v12         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|         wsinterface/led_reg__D$h02          | SDP  |     1      |      1      | READ_FIRST |   false    |
++---------------------------------------------+------+------------+-------------+------------+------------+
+
+----------- Memory Block Information (end) ----------
+
+Elapsed time for placement: 0 hours 0 minutes 3 seconds

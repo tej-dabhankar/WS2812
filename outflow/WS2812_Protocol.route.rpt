@@ -1,0 +1,12 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Date: Tue Apr 30 12:40:25 2024
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T120F324
+Top-level Entity Name: WS2812_Protocol
+Elapsed time for routing: 0 hours 0 minutes 2 seconds
+Elapsed time for entire flow: 0 hours 0 minutes 23 seconds

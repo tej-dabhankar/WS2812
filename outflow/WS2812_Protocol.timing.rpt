@@ -1,0 +1,1471 @@
+
+Efinix Static Timing Analysis Report
+Version: 2023.2.307
+Date: Tue Apr 30 12:40:39 2024
+
+Copyright (C) 2013 - 2023  All rights reserved.
+
+Top-level Entity Name: WS2812_Protocol
+
+SDC Filename: Not Specified
+
+Timing Model: C4
+	temperature : 0C to 85C
+	voltage : 1.2V +/-50mV
+	speedgrade : 4
+	technology : s40ll
+	status : final
+
+---------- Table of Contents (begin) ----------
+   1. Clock Frequency Summary
+   2. Clock Relationship Summary
+   3. Path Details for Max Critical Paths
+   4. Path Details for Min Critical Paths
+---------- Table of Contents (end) ------------
+
+---------- 1. Clock Frequency Summary (begin) ----------
+
+User target constrained clocks
+ Clock Name  Period (ns)  Frequency (MHz)   Waveform      Targets
+    clk         1.000        1000.000     {0.000 0.500}    {clk}
+
+Maximum possible analyzed clocks frequency
+ Clock Name  Period (ns)  Frequency (MHz)     Edge
+    clk         7.961        125.612         (R-R)
+
+Geomean max period: 7.961
+
+---------- Clock Frequency Summary (end) ---------------
+
+---------- 2. Clock Relationship Summary (begin) ----------
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+      clk              clk             1.000            -6.961           (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+      clk              clk             0.000            0.217            (R-R)
+
+NOTE: Values are in nanoseconds.
+
+---------- Clock Relationship Summary (end) ---------------
+
+---------- 3. Path Details for Max Critical Paths (begin) ----------
+
+################################################################################
+Path Detail Report (clk vs clk)
+################################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_reg__D$h0e12|RCLK    
+Path End      : wsinterface/low_count[3]~FF|D        
+Launch Clock  : clk (RISE)                           
+Capture Clock : clk (RISE)                           
+Slack         : -6.961 (required time - arrival time)
+Delay         : 4.903                                
+
+Logic Level             : 5
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  5.310
++ Clock To Q + Data Path Delay :  7.841
+---------------------------------------
+End-of-path arrival time       : 13.151
+
+Constraint                     : 1.000
++ Capture Clock Path Delay     : 5.310
+- Clock Uncertainty            : 0.120
+--------------------------------------
+End-of-path required time      : 6.190
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                               inpad           0.000             0.000               0       (338,321)
+clk                               inpad           0.200             0.200               2       (338,321)
+clk                               net             0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                       gbuf            4.790             5.310               2       (337,321)
+CLKBUF__0|O                       gbuf            0.000             5.310             301       (337,321)
+clk~O                             net             0.000             5.310             301       (337,321)
+wsinterface/led_reg__D$h0e12|RCLK ram_4096x20     0.000             5.310             301       (49,62)  
+
+Data Path
+                 name                   model name   delay (ns)  cumulative delay (ns) pins on net    location
+================================================================================================================
+wsinterface/led_reg__D$h0e12|RDATA[10] ram_4096x20     2.820             2.820              2         (49,62)
+wsinterface/n2502                      net             1.069             3.889              2         (49,62)
+   Routing elements:
+      Manhattan distance of X:4, Y:10
+LUT__1325|in[1]                        lut             0.000             3.889              2         (53,52)
+LUT__1325|out                          lut             0.000             3.889              2         (53,52)
+n833                                   net             1.089             4.978              2         (53,52)
+   Routing elements:
+      Manhattan distance of X:10, Y:2
+LUT__1326|in[1]                        lut             0.000             4.978              2         (43,50)
+LUT__1326|out                          lut             0.000             4.978              2         (43,50)
+n834                                   net             0.484             5.462              2         (43,50)
+   Routing elements:
+      Manhattan distance of X:0, Y:4
+LUT__1330|in[2]                        lut             0.000             5.462              2         (43,46)
+LUT__1330|out                          lut             0.000             5.462              3         (43,46)
+n838                                   net             1.455             6.917              3         (43,46)
+   Routing elements:
+      Manhattan distance of X:2, Y:2
+LUT__1332|in[0]                        lut             0.000             6.917              3         (45,44)
+LUT__1332|out                          lut             0.000             6.917              5         (45,44)
+n840                                   net             0.806             7.723              5         (45,44)
+   Routing elements:
+      Manhattan distance of X:1, Y:20
+LUT__1359|in[2]                        lut             0.000             7.723              5         (44,24)
+LUT__1359|out                          lut             0.000             7.723              2         (44,24)
+wsinterface/low_count[3]~FF|D          ff              0.118             7.841              2         (44,24)
+
+Capture Clock Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+clk                                inpad        0.000             0.000               0       (338,321)
+clk                                inpad        0.200             0.200               2       (338,321)
+clk                                net          0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                        gbuf         4.790             5.310               2       (337,321)
+CLKBUF__0|O                        gbuf         0.000             5.310             301       (337,321)
+clk~O                              net          0.000             5.310             301       (337,321)
+wsinterface/low_count[3]~FF|CLK    ff           0.000             5.310             301       (44,24)  
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_reg__D$h0h12|RCLK    
+Path End      : wsinterface/high_count[3]~FF|D       
+Launch Clock  : clk (RISE)                           
+Capture Clock : clk (RISE)                           
+Slack         : -6.851 (required time - arrival time)
+Delay         : 4.793                                
+
+Logic Level             : 5
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  5.310
++ Clock To Q + Data Path Delay :  7.731
+---------------------------------------
+End-of-path arrival time       : 13.041
+
+Constraint                     : 1.000
++ Capture Clock Path Delay     : 5.310
+- Clock Uncertainty            : 0.120
+--------------------------------------
+End-of-path required time      : 6.190
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                               inpad           0.000             0.000               0       (338,321)
+clk                               inpad           0.200             0.200               2       (338,321)
+clk                               net             0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                       gbuf            4.790             5.310               2       (337,321)
+CLKBUF__0|O                       gbuf            0.000             5.310             301       (337,321)
+clk~O                             net             0.000             5.310             301       (337,321)
+wsinterface/led_reg__D$h0h12|RCLK ram_4096x20     0.000             5.310             301       (39,42)  
+
+Data Path
+                 name                   model name   delay (ns)  cumulative delay (ns) pins on net    location
+================================================================================================================
+wsinterface/led_reg__D$h0h12|RDATA[10] ram_4096x20     2.820             2.820              2         (39,42)
+wsinterface/n2493                      net             1.143             3.963              2         (39,42)
+   Routing elements:
+      Manhattan distance of X:5, Y:10
+LUT__1321|in[1]                        lut             0.000             3.963              2         (44,52)
+LUT__1321|out                          lut             0.000             3.963              2         (44,52)
+n829                                   net             0.929             4.892              2         (44,52)
+   Routing elements:
+      Manhattan distance of X:8, Y:0
+LUT__1322|in[1]                        lut             0.000             4.892              2         (36,52)
+LUT__1322|out                          lut             0.000             4.892              2         (36,52)
+n830                                   net             1.147             6.039              2         (36,52)
+   Routing elements:
+      Manhattan distance of X:9, Y:3
+LUT__1323|in[0]                        lut             0.000             6.039              2         (45,49)
+LUT__1323|out                          lut             0.000             6.039              3         (45,49)
+n831                                   net             0.913             6.952              3         (45,49)
+   Routing elements:
+      Manhattan distance of X:2, Y:4
+LUT__1335|in[2]                        lut             0.000             6.952              3         (43,45)
+LUT__1335|out                          lut             0.000             6.952              5         (43,45)
+n842                                   net             0.661             7.613              5         (43,45)
+   Routing elements:
+      Manhattan distance of X:9, Y:0
+LUT__1338|in[1]                        lut             0.000             7.613              5         (34,45)
+LUT__1338|out                          lut             0.000             7.613              2         (34,45)
+wsinterface/high_count[3]~FF|D         ff              0.118             7.731              2         (34,45)
+
+Capture Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                                 inpad        0.000             0.000               0       (338,321)
+clk                                 inpad        0.200             0.200               2       (338,321)
+clk                                 net          0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                         gbuf         4.790             5.310               2       (337,321)
+CLKBUF__0|O                         gbuf         0.000             5.310             301       (337,321)
+clk~O                               net          0.000             5.310             301       (337,321)
+wsinterface/high_count[3]~FF|CLK    ff           0.000             5.310             301       (34,45)  
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_reg__D$h0e12|RCLK    
+Path End      : wsinterface/low_count[5]~FF|D        
+Launch Clock  : clk (RISE)                           
+Capture Clock : clk (RISE)                           
+Slack         : -6.816 (required time - arrival time)
+Delay         : 4.758                                
+
+Logic Level             : 5
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  5.310
++ Clock To Q + Data Path Delay :  7.696
+---------------------------------------
+End-of-path arrival time       : 13.006
+
+Constraint                     : 1.000
++ Capture Clock Path Delay     : 5.310
+- Clock Uncertainty            : 0.120
+--------------------------------------
+End-of-path required time      : 6.190
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                               inpad           0.000             0.000               0       (338,321)
+clk                               inpad           0.200             0.200               2       (338,321)
+clk                               net             0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                       gbuf            4.790             5.310               2       (337,321)
+CLKBUF__0|O                       gbuf            0.000             5.310             301       (337,321)
+clk~O                             net             0.000             5.310             301       (337,321)
+wsinterface/led_reg__D$h0e12|RCLK ram_4096x20     0.000             5.310             301       (49,62)  
+
+Data Path
+                 name                   model name   delay (ns)  cumulative delay (ns) pins on net    location
+================================================================================================================
+wsinterface/led_reg__D$h0e12|RDATA[10] ram_4096x20     2.820             2.820              2         (49,62)
+wsinterface/n2502                      net             1.069             3.889              2         (49,62)
+   Routing elements:
+      Manhattan distance of X:4, Y:10
+LUT__1325|in[1]                        lut             0.000             3.889              2         (53,52)
+LUT__1325|out                          lut             0.000             3.889              2         (53,52)
+n833                                   net             1.089             4.978              2         (53,52)
+   Routing elements:
+      Manhattan distance of X:10, Y:2
+LUT__1326|in[1]                        lut             0.000             4.978              2         (43,50)
+LUT__1326|out                          lut             0.000             4.978              2         (43,50)
+n834                                   net             0.484             5.462              2         (43,50)
+   Routing elements:
+      Manhattan distance of X:0, Y:4
+LUT__1330|in[2]                        lut             0.000             5.462              2         (43,46)
+LUT__1330|out                          lut             0.000             5.462              3         (43,46)
+n838                                   net             1.455             6.917              3         (43,46)
+   Routing elements:
+      Manhattan distance of X:2, Y:2
+LUT__1332|in[0]                        lut             0.000             6.917              3         (45,44)
+LUT__1332|out                          lut             0.000             6.917              5         (45,44)
+n840                                   net             0.661             7.578              5         (45,44)
+   Routing elements:
+      Manhattan distance of X:17, Y:0
+LUT__1367|in[1]                        lut             0.000             7.578              5         (28,44)
+LUT__1367|out                          lut             0.000             7.578              2         (28,44)
+wsinterface/low_count[5]~FF|D          ff              0.118             7.696              2         (28,44)
+
+Capture Clock Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+clk                                inpad        0.000             0.000               0       (338,321)
+clk                                inpad        0.200             0.200               2       (338,321)
+clk                                net          0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                        gbuf         4.790             5.310               2       (337,321)
+CLKBUF__0|O                        gbuf         0.000             5.310             301       (337,321)
+clk~O                              net          0.000             5.310             301       (337,321)
+wsinterface/low_count[5]~FF|CLK    ff           0.000             5.310             301       (28,44)  
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_reg__D$h0f12|RCLK    
+Path End      : wsinterface/low_count[3]~FF|D        
+Launch Clock  : clk (RISE)                           
+Capture Clock : clk (RISE)                           
+Slack         : -6.808 (required time - arrival time)
+Delay         : 4.750                                
+
+Logic Level             : 5
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  5.310
++ Clock To Q + Data Path Delay :  7.688
+---------------------------------------
+End-of-path arrival time       : 12.998
+
+Constraint                     : 1.000
++ Capture Clock Path Delay     : 5.310
+- Clock Uncertainty            : 0.120
+--------------------------------------
+End-of-path required time      : 6.190
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                               inpad           0.000             0.000               0       (338,321)
+clk                               inpad           0.200             0.200               2       (338,321)
+clk                               net             0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                       gbuf            4.790             5.310               2       (337,321)
+CLKBUF__0|O                       gbuf            0.000             5.310             301       (337,321)
+clk~O                             net             0.000             5.310             301       (337,321)
+wsinterface/led_reg__D$h0f12|RCLK ram_4096x20     0.000             5.310             301       (71,22)  
+
+Data Path
+                 name                   model name   delay (ns)  cumulative delay (ns) pins on net    location
+================================================================================================================
+wsinterface/led_reg__D$h0f12|RDATA[10] ram_4096x20     2.820             2.820              2         (71,22)
+wsinterface/n2499                      net             0.845             3.665              2         (71,22)
+   Routing elements:
+      Manhattan distance of X:14, Y:10
+LUT__1324|in[0]                        lut             0.000             3.665              2         (57,32)
+LUT__1324|out                          lut             0.000             3.665              2         (57,32)
+n832                                   net             1.160             4.825              2         (57,32)
+   Routing elements:
+      Manhattan distance of X:14, Y:18
+LUT__1326|in[0]                        lut             0.000             4.825              2         (43,50)
+LUT__1326|out                          lut             0.000             4.825              2         (43,50)
+n834                                   net             0.484             5.309              2         (43,50)
+   Routing elements:
+      Manhattan distance of X:0, Y:4
+LUT__1330|in[2]                        lut             0.000             5.309              2         (43,46)
+LUT__1330|out                          lut             0.000             5.309              3         (43,46)
+n838                                   net             1.455             6.764              3         (43,46)
+   Routing elements:
+      Manhattan distance of X:2, Y:2
+LUT__1332|in[0]                        lut             0.000             6.764              3         (45,44)
+LUT__1332|out                          lut             0.000             6.764              5         (45,44)
+n840                                   net             0.806             7.570              5         (45,44)
+   Routing elements:
+      Manhattan distance of X:1, Y:20
+LUT__1359|in[2]                        lut             0.000             7.570              5         (44,24)
+LUT__1359|out                          lut             0.000             7.570              2         (44,24)
+wsinterface/low_count[3]~FF|D          ff              0.118             7.688              2         (44,24)
+
+Capture Clock Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+clk                                inpad        0.000             0.000               0       (338,321)
+clk                                inpad        0.200             0.200               2       (338,321)
+clk                                net          0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                        gbuf         4.790             5.310               2       (337,321)
+CLKBUF__0|O                        gbuf         0.000             5.310             301       (337,321)
+clk~O                              net          0.000             5.310             301       (337,321)
+wsinterface/low_count[3]~FF|CLK    ff           0.000             5.310             301       (44,24)  
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_reg__D$h012|RCLK     
+Path End      : wsinterface/low_count[3]~FF|D        
+Launch Clock  : clk (RISE)                           
+Capture Clock : clk (RISE)                           
+Slack         : -6.766 (required time - arrival time)
+Delay         : 4.708                                
+
+Logic Level             : 5
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  5.310
++ Clock To Q + Data Path Delay :  7.646
+---------------------------------------
+End-of-path arrival time       : 12.956
+
+Constraint                     : 1.000
++ Capture Clock Path Delay     : 5.310
+- Clock Uncertainty            : 0.120
+--------------------------------------
+End-of-path required time      : 6.190
+
+Launch Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                              inpad           0.000             0.000               0       (338,321)
+clk                              inpad           0.200             0.200               2       (338,321)
+clk                              net             0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                      gbuf            4.790             5.310               2       (337,321)
+CLKBUF__0|O                      gbuf            0.000             5.310             301       (337,321)
+clk~O                            net             0.000             5.310             301       (337,321)
+wsinterface/led_reg__D$h012|RCLK ram_4096x20     0.000             5.310             301       (23,22)  
+
+Data Path
+                name                   model name   delay (ns)  cumulative delay (ns) pins on net    location
+===============================================================================================================
+wsinterface/led_reg__D$h012|RDATA[10] ram_4096x20     2.820             2.820              2         (23,22)
+wsinterface/n2514                     net             1.334             4.154              2         (23,22)
+   Routing elements:
+      Manhattan distance of X:20, Y:7
+LUT__1327|in[1]                       lut             0.000             4.154              2         (43,15)
+LUT__1327|out                         lut             0.000             4.154              2         (43,15)
+n835                                  net             0.489             4.643              2         (43,15)
+   Routing elements:
+      Manhattan distance of X:0, Y:18
+LUT__1329|in[3]                       lut             0.000             4.643              2         (43,33)
+LUT__1329|out                         lut             0.000             4.643              2         (43,33)
+n837                                  net             0.624             5.267              2         (43,33)
+   Routing elements:
+      Manhattan distance of X:0, Y:13
+LUT__1330|in[0]                       lut             0.000             5.267              2         (43,46)
+LUT__1330|out                         lut             0.000             5.267              3         (43,46)
+n838                                  net             1.455             6.722              3         (43,46)
+   Routing elements:
+      Manhattan distance of X:2, Y:2
+LUT__1332|in[0]                       lut             0.000             6.722              3         (45,44)
+LUT__1332|out                         lut             0.000             6.722              5         (45,44)
+n840                                  net             0.806             7.528              5         (45,44)
+   Routing elements:
+      Manhattan distance of X:1, Y:20
+LUT__1359|in[2]                       lut             0.000             7.528              5         (44,24)
+LUT__1359|out                         lut             0.000             7.528              2         (44,24)
+wsinterface/low_count[3]~FF|D         ff              0.118             7.646              2         (44,24)
+
+Capture Clock Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+clk                                inpad        0.000             0.000               0       (338,321)
+clk                                inpad        0.200             0.200               2       (338,321)
+clk                                net          0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                        gbuf         4.790             5.310               2       (337,321)
+CLKBUF__0|O                        gbuf         0.000             5.310             301       (337,321)
+clk~O                              net          0.000             5.310             301       (337,321)
+wsinterface/low_count[3]~FF|CLK    ff           0.000             5.310             301       (44,24)  
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_reg__D$h0h12|RCLK    
+Path End      : wsinterface/low_count[4]~FF|D        
+Launch Clock  : clk (RISE)                           
+Capture Clock : clk (RISE)                           
+Slack         : -6.750 (required time - arrival time)
+Delay         : 4.692                                
+
+Logic Level             : 5
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  5.310
++ Clock To Q + Data Path Delay :  7.630
+---------------------------------------
+End-of-path arrival time       : 12.940
+
+Constraint                     : 1.000
++ Capture Clock Path Delay     : 5.310
+- Clock Uncertainty            : 0.120
+--------------------------------------
+End-of-path required time      : 6.190
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                               inpad           0.000             0.000               0       (338,321)
+clk                               inpad           0.200             0.200               2       (338,321)
+clk                               net             0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                       gbuf            4.790             5.310               2       (337,321)
+CLKBUF__0|O                       gbuf            0.000             5.310             301       (337,321)
+clk~O                             net             0.000             5.310             301       (337,321)
+wsinterface/led_reg__D$h0h12|RCLK ram_4096x20     0.000             5.310             301       (39,42)  
+
+Data Path
+                 name                   model name   delay (ns)  cumulative delay (ns) pins on net    location
+================================================================================================================
+wsinterface/led_reg__D$h0h12|RDATA[10] ram_4096x20     2.820             2.820              2         (39,42)
+wsinterface/n2493                      net             1.143             3.963              2         (39,42)
+   Routing elements:
+      Manhattan distance of X:5, Y:10
+LUT__1321|in[1]                        lut             0.000             3.963              2         (44,52)
+LUT__1321|out                          lut             0.000             3.963              2         (44,52)
+n829                                   net             0.929             4.892              2         (44,52)
+   Routing elements:
+      Manhattan distance of X:8, Y:0
+LUT__1322|in[1]                        lut             0.000             4.892              2         (36,52)
+LUT__1322|out                          lut             0.000             4.892              2         (36,52)
+n830                                   net             1.147             6.039              2         (36,52)
+   Routing elements:
+      Manhattan distance of X:9, Y:3
+LUT__1323|in[0]                        lut             0.000             6.039              2         (45,49)
+LUT__1323|out                          lut             0.000             6.039              3         (45,49)
+n831                                   net             0.913             6.952              3         (45,49)
+   Routing elements:
+      Manhattan distance of X:2, Y:4
+LUT__1335|in[2]                        lut             0.000             6.952              3         (43,45)
+LUT__1335|out                          lut             0.000             6.952              5         (43,45)
+n842                                   net             0.560             7.512              5         (43,45)
+   Routing elements:
+      Manhattan distance of X:3, Y:0
+LUT__1362|in[1]                        lut             0.000             7.512              5         (46,45)
+LUT__1362|out                          lut             0.000             7.512              2         (46,45)
+wsinterface/low_count[4]~FF|D          ff              0.118             7.630              2         (46,45)
+
+Capture Clock Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+clk                                inpad        0.000             0.000               0       (338,321)
+clk                                inpad        0.200             0.200               2       (338,321)
+clk                                net          0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                        gbuf         4.790             5.310               2       (337,321)
+CLKBUF__0|O                        gbuf         0.000             5.310             301       (337,321)
+clk~O                              net          0.000             5.310             301       (337,321)
+wsinterface/low_count[4]~FF|CLK    ff           0.000             5.310             301       (46,45)  
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_reg__D$h0e12|RCLK    
+Path End      : wsinterface/high_count[4]~FF|D       
+Launch Clock  : clk (RISE)                           
+Capture Clock : clk (RISE)                           
+Slack         : -6.719 (required time - arrival time)
+Delay         : 4.661                                
+
+Logic Level             : 5
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  5.310
++ Clock To Q + Data Path Delay :  7.599
+---------------------------------------
+End-of-path arrival time       : 12.909
+
+Constraint                     : 1.000
++ Capture Clock Path Delay     : 5.310
+- Clock Uncertainty            : 0.120
+--------------------------------------
+End-of-path required time      : 6.190
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                               inpad           0.000             0.000               0       (338,321)
+clk                               inpad           0.200             0.200               2       (338,321)
+clk                               net             0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                       gbuf            4.790             5.310               2       (337,321)
+CLKBUF__0|O                       gbuf            0.000             5.310             301       (337,321)
+clk~O                             net             0.000             5.310             301       (337,321)
+wsinterface/led_reg__D$h0e12|RCLK ram_4096x20     0.000             5.310             301       (49,62)  
+
+Data Path
+                 name                   model name   delay (ns)  cumulative delay (ns) pins on net    location
+================================================================================================================
+wsinterface/led_reg__D$h0e12|RDATA[10] ram_4096x20     2.820             2.820              2         (49,62)
+wsinterface/n2502                      net             1.069             3.889              2         (49,62)
+   Routing elements:
+      Manhattan distance of X:4, Y:10
+LUT__1325|in[1]                        lut             0.000             3.889              2         (53,52)
+LUT__1325|out                          lut             0.000             3.889              2         (53,52)
+n833                                   net             1.089             4.978              2         (53,52)
+   Routing elements:
+      Manhattan distance of X:10, Y:2
+LUT__1326|in[1]                        lut             0.000             4.978              2         (43,50)
+LUT__1326|out                          lut             0.000             4.978              2         (43,50)
+n834                                   net             0.484             5.462              2         (43,50)
+   Routing elements:
+      Manhattan distance of X:0, Y:4
+LUT__1330|in[2]                        lut             0.000             5.462              2         (43,46)
+LUT__1330|out                          lut             0.000             5.462              3         (43,46)
+n838                                   net             1.455             6.917              3         (43,46)
+   Routing elements:
+      Manhattan distance of X:2, Y:2
+LUT__1332|in[0]                        lut             0.000             6.917              3         (45,44)
+LUT__1332|out                          lut             0.000             6.917              5         (45,44)
+n840                                   net             0.564             7.481              5         (45,44)
+   Routing elements:
+      Manhattan distance of X:3, Y:0
+LUT__1340|in[1]                        lut             0.000             7.481              5         (48,44)
+LUT__1340|out                          lut             0.000             7.481              2         (48,44)
+wsinterface/high_count[4]~FF|D         ff              0.118             7.599              2         (48,44)
+
+Capture Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                                 inpad        0.000             0.000               0       (338,321)
+clk                                 inpad        0.200             0.200               2       (338,321)
+clk                                 net          0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                         gbuf         4.790             5.310               2       (337,321)
+CLKBUF__0|O                         gbuf         0.000             5.310             301       (337,321)
+clk~O                               net          0.000             5.310             301       (337,321)
+wsinterface/high_count[4]~FF|CLK    ff           0.000             5.310             301       (48,44)  
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_reg__D$h0i12|RCLK    
+Path End      : wsinterface/high_count[3]~FF|D       
+Launch Clock  : clk (RISE)                           
+Capture Clock : clk (RISE)                           
+Slack         : -6.715 (required time - arrival time)
+Delay         : 4.657                                
+
+Logic Level             : 5
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  5.310
++ Clock To Q + Data Path Delay :  7.595
+---------------------------------------
+End-of-path arrival time       : 12.905
+
+Constraint                     : 1.000
++ Capture Clock Path Delay     : 5.310
+- Clock Uncertainty            : 0.120
+--------------------------------------
+End-of-path required time      : 6.190
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                               inpad           0.000             0.000               0       (338,321)
+clk                               inpad           0.200             0.200               2       (338,321)
+clk                               net             0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                       gbuf            4.790             5.310               2       (337,321)
+CLKBUF__0|O                       gbuf            0.000             5.310             301       (337,321)
+clk~O                             net             0.000             5.310             301       (337,321)
+wsinterface/led_reg__D$h0i12|RCLK ram_4096x20     0.000             5.310             301       (39,62)  
+
+Data Path
+                 name                   model name   delay (ns)  cumulative delay (ns) pins on net    location
+================================================================================================================
+wsinterface/led_reg__D$h0i12|RDATA[10] ram_4096x20     2.820             2.820              2         (39,62)
+wsinterface/n2490                      net             1.007             3.827              2         (39,62)
+   Routing elements:
+      Manhattan distance of X:5, Y:10
+LUT__1321|in[2]                        lut             0.000             3.827              2         (44,52)
+LUT__1321|out                          lut             0.000             3.827              2         (44,52)
+n829                                   net             0.929             4.756              2         (44,52)
+   Routing elements:
+      Manhattan distance of X:8, Y:0
+LUT__1322|in[1]                        lut             0.000             4.756              2         (36,52)
+LUT__1322|out                          lut             0.000             4.756              2         (36,52)
+n830                                   net             1.147             5.903              2         (36,52)
+   Routing elements:
+      Manhattan distance of X:9, Y:3
+LUT__1323|in[0]                        lut             0.000             5.903              2         (45,49)
+LUT__1323|out                          lut             0.000             5.903              3         (45,49)
+n831                                   net             0.913             6.816              3         (45,49)
+   Routing elements:
+      Manhattan distance of X:2, Y:4
+LUT__1335|in[2]                        lut             0.000             6.816              3         (43,45)
+LUT__1335|out                          lut             0.000             6.816              5         (43,45)
+n842                                   net             0.661             7.477              5         (43,45)
+   Routing elements:
+      Manhattan distance of X:9, Y:0
+LUT__1338|in[1]                        lut             0.000             7.477              5         (34,45)
+LUT__1338|out                          lut             0.000             7.477              2         (34,45)
+wsinterface/high_count[3]~FF|D         ff              0.118             7.595              2         (34,45)
+
+Capture Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                                 inpad        0.000             0.000               0       (338,321)
+clk                                 inpad        0.200             0.200               2       (338,321)
+clk                                 net          0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                         gbuf         4.790             5.310               2       (337,321)
+CLKBUF__0|O                         gbuf         0.000             5.310             301       (337,321)
+clk~O                               net          0.000             5.310             301       (337,321)
+wsinterface/high_count[3]~FF|CLK    ff           0.000             5.310             301       (34,45)  
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_reg__D$h0e12|RCLK    
+Path End      : wsinterface/high_count[2]~FF|D       
+Launch Clock  : clk (RISE)                           
+Capture Clock : clk (RISE)                           
+Slack         : -6.709 (required time - arrival time)
+Delay         : 4.651                                
+
+Logic Level             : 5
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  5.310
++ Clock To Q + Data Path Delay :  7.589
+---------------------------------------
+End-of-path arrival time       : 12.899
+
+Constraint                     : 1.000
++ Capture Clock Path Delay     : 5.310
+- Clock Uncertainty            : 0.120
+--------------------------------------
+End-of-path required time      : 6.190
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                               inpad           0.000             0.000               0       (338,321)
+clk                               inpad           0.200             0.200               2       (338,321)
+clk                               net             0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                       gbuf            4.790             5.310               2       (337,321)
+CLKBUF__0|O                       gbuf            0.000             5.310             301       (337,321)
+clk~O                             net             0.000             5.310             301       (337,321)
+wsinterface/led_reg__D$h0e12|RCLK ram_4096x20     0.000             5.310             301       (49,62)  
+
+Data Path
+                 name                   model name   delay (ns)  cumulative delay (ns) pins on net    location
+================================================================================================================
+wsinterface/led_reg__D$h0e12|RDATA[10] ram_4096x20     2.820             2.820              2         (49,62)
+wsinterface/n2502                      net             1.069             3.889              2         (49,62)
+   Routing elements:
+      Manhattan distance of X:4, Y:10
+LUT__1325|in[1]                        lut             0.000             3.889              2         (53,52)
+LUT__1325|out                          lut             0.000             3.889              2         (53,52)
+n833                                   net             1.089             4.978              2         (53,52)
+   Routing elements:
+      Manhattan distance of X:10, Y:2
+LUT__1326|in[1]                        lut             0.000             4.978              2         (43,50)
+LUT__1326|out                          lut             0.000             4.978              2         (43,50)
+n834                                   net             0.484             5.462              2         (43,50)
+   Routing elements:
+      Manhattan distance of X:0, Y:4
+LUT__1330|in[2]                        lut             0.000             5.462              2         (43,46)
+LUT__1330|out                          lut             0.000             5.462              3         (43,46)
+n838                                   net             1.455             6.917              3         (43,46)
+   Routing elements:
+      Manhattan distance of X:2, Y:2
+LUT__1332|in[0]                        lut             0.000             6.917              3         (45,44)
+LUT__1332|out                          lut             0.000             6.917              5         (45,44)
+n840                                   net             0.554             7.471              5         (45,44)
+   Routing elements:
+      Manhattan distance of X:13, Y:0
+LUT__1334|in[3]                        lut             0.000             7.471              5         (32,44)
+LUT__1334|out                          lut             0.000             7.471              2         (32,44)
+wsinterface/high_count[2]~FF|D         ff              0.118             7.589              2         (32,44)
+
+Capture Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                                 inpad        0.000             0.000               0       (338,321)
+clk                                 inpad        0.200             0.200               2       (338,321)
+clk                                 net          0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                         gbuf         4.790             5.310               2       (337,321)
+CLKBUF__0|O                         gbuf         0.000             5.310             301       (337,321)
+clk~O                               net          0.000             5.310             301       (337,321)
+wsinterface/high_count[2]~FF|CLK    ff           0.000             5.310             301       (32,44)  
+
+++++ Path 10 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_reg__D$h0h12|RCLK    
+Path End      : wsinterface/high_count[5]~FF|D       
+Launch Clock  : clk (RISE)                           
+Capture Clock : clk (RISE)                           
+Slack         : -6.687 (required time - arrival time)
+Delay         : 4.629                                
+
+Logic Level             : 5
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  5.310
++ Clock To Q + Data Path Delay :  7.567
+---------------------------------------
+End-of-path arrival time       : 12.877
+
+Constraint                     : 1.000
++ Capture Clock Path Delay     : 5.310
+- Clock Uncertainty            : 0.120
+--------------------------------------
+End-of-path required time      : 6.190
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                               inpad           0.000             0.000               0       (338,321)
+clk                               inpad           0.200             0.200               2       (338,321)
+clk                               net             0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                       gbuf            4.790             5.310               2       (337,321)
+CLKBUF__0|O                       gbuf            0.000             5.310             301       (337,321)
+clk~O                             net             0.000             5.310             301       (337,321)
+wsinterface/led_reg__D$h0h12|RCLK ram_4096x20     0.000             5.310             301       (39,42)  
+
+Data Path
+                 name                   model name   delay (ns)  cumulative delay (ns) pins on net    location
+================================================================================================================
+wsinterface/led_reg__D$h0h12|RDATA[10] ram_4096x20     2.820             2.820              2         (39,42)
+wsinterface/n2493                      net             1.143             3.963              2         (39,42)
+   Routing elements:
+      Manhattan distance of X:5, Y:10
+LUT__1321|in[1]                        lut             0.000             3.963              2         (44,52)
+LUT__1321|out                          lut             0.000             3.963              2         (44,52)
+n829                                   net             0.929             4.892              2         (44,52)
+   Routing elements:
+      Manhattan distance of X:8, Y:0
+LUT__1322|in[1]                        lut             0.000             4.892              2         (36,52)
+LUT__1322|out                          lut             0.000             4.892              2         (36,52)
+n830                                   net             1.147             6.039              2         (36,52)
+   Routing elements:
+      Manhattan distance of X:9, Y:3
+LUT__1323|in[0]                        lut             0.000             6.039              2         (45,49)
+LUT__1323|out                          lut             0.000             6.039              3         (45,49)
+n831                                   net             0.913             6.952              3         (45,49)
+   Routing elements:
+      Manhattan distance of X:2, Y:4
+LUT__1335|in[2]                        lut             0.000             6.952              3         (43,45)
+LUT__1335|out                          lut             0.000             6.952              5         (43,45)
+n842                                   net             0.497             7.449              5         (43,45)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+LUT__1342|in[2]                        lut             0.000             7.449              5         (44,45)
+LUT__1342|out                          lut             0.000             7.449              2         (44,45)
+wsinterface/high_count[5]~FF|D         ff              0.118             7.567              2         (44,45)
+
+Capture Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                                 inpad        0.000             0.000               0       (338,321)
+clk                                 inpad        0.200             0.200               2       (338,321)
+clk                                 net          0.320             0.520               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                         gbuf         4.790             5.310               2       (337,321)
+CLKBUF__0|O                         gbuf         0.000             5.310             301       (337,321)
+clk~O                               net          0.000             5.310             301       (337,321)
+wsinterface/high_count[5]~FF|CLK    ff           0.000             5.310             301       (44,45)  
+
+---------- Path Details for Max Critical Paths (end) ---------------
+
+---------- 4. Path Details for Min Critical Paths (begin) ----------
+
+################################################################################
+Path Detail Report (clk vs clk)
+################################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : w_rgb_data[1]~FF|CLK                
+Path End      : wsinterface/led_reg__D$h012|WDATA[0]
+Launch Clock  : clk (RISE)                          
+Capture Clock : clk (RISE)                          
+Slack         : 0.217 (arrival time - required time)
+Delay         : 0.268                               
+
+Logic Level             : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.655
++ Clock To Q + Data Path Delay : 0.277
+--------------------------------------
+End-of-path arrival time       : 2.932
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.655
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.715
+
+Launch Clock Path
+        name          model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================
+clk                     inpad        0.000             0.000               0       (338,321)
+clk                     inpad        0.100             0.100               2       (338,321)
+clk                     net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I             gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O             gbuf         0.000             2.655             301       (337,321)
+clk~O                   net          0.000             2.655             301       (337,321)
+w_rgb_data[1]~FF|CLK    ff           0.000             2.655             301       (40,22)  
+
+Data Path
+                name                  model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================================
+w_rgb_data[1]~FF|Q                   ff               0.141            0.141              2         (40,22)
+w_rgb_data[1]                        net              0.268            0.409              2         (40,22)
+   Routing elements:
+      Manhattan distance of X:17, Y:0
+wsinterface/led_reg__D$h012|WDATA[0] ram_4096x20     -0.132            0.277              2         (23,22)
+
+Capture Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                              inpad           0.000             0.000               0       (338,321)
+clk                              inpad           0.100             0.100               2       (338,321)
+clk                              net             0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                      gbuf            2.395             2.655               2       (337,321)
+CLKBUF__0|O                      gbuf            0.000             2.655             301       (337,321)
+clk~O                            net             0.000             2.655             301       (337,321)
+wsinterface/led_reg__D$h012|WCLK ram_4096x20     0.000             2.655             301       (23,22)  
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/data_count[1]~FF|CLK     
+Path End      : wsinterface/led_reg__D$h0d12|RADDR[9]
+Launch Clock  : clk (RISE)                           
+Capture Clock : clk (RISE)                           
+Slack         : 0.218 (arrival time - required time) 
+Delay         : 0.272                                
+
+Logic Level             : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.655
++ Clock To Q + Data Path Delay : 0.278
+--------------------------------------
+End-of-path arrival time       : 2.933
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.655
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.715
+
+Launch Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                                 inpad        0.000             0.000               0       (338,321)
+clk                                 inpad        0.100             0.100               2       (338,321)
+clk                                 net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                         gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                         gbuf         0.000             2.655             301       (337,321)
+clk~O                               net          0.000             2.655             301       (337,321)
+wsinterface/data_count[1]~FF|CLK    ff           0.000             2.655             301       (44,51)  
+
+Data Path
+                name                   model name   delay (ns)  cumulative delay (ns) pins on net    location
+===============================================================================================================
+wsinterface/data_count[1]~FF|Q        ff               0.141            0.141              27        (44,51)
+wsinterface/data_count[1]             net              0.272            0.413              27        (44,51)
+   Routing elements:
+      Manhattan distance of X:5, Y:9
+wsinterface/led_reg__D$h0d12|RADDR[9] ram_4096x20     -0.135            0.278              27        (49,42)
+
+Capture Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                               inpad           0.000             0.000               0       (338,321)
+clk                               inpad           0.100             0.100               2       (338,321)
+clk                               net             0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                       gbuf            2.395             2.655               2       (337,321)
+CLKBUF__0|O                       gbuf            0.000             2.655             301       (337,321)
+clk~O                             net             0.000             2.655             301       (337,321)
+wsinterface/led_reg__D$h0d12|RCLK ram_4096x20     0.000             2.655             301       (49,42)  
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_counter[6]~FF|CLK   
+Path End      : wsinterface/led_counter[6]~FF|D     
+Launch Clock  : clk (RISE)                          
+Capture Clock : clk (RISE)                          
+Slack         : 0.307 (arrival time - required time)
+Delay         : 0.226                               
+
+Logic Level             : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.655
++ Clock To Q + Data Path Delay : 0.367
+--------------------------------------
+End-of-path arrival time       : 3.022
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.655
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.715
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                                  inpad        0.000             0.000               0       (338,321)
+clk                                  inpad        0.100             0.100               2       (338,321)
+clk                                  net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                          gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                          gbuf         0.000             2.655             301       (337,321)
+clk~O                                net          0.000             2.655             301       (337,321)
+wsinterface/led_counter[6]~FF|CLK    ff           0.000             2.655             301       (30,41)  
+
+Data Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+wsinterface/led_counter[6]~FF|Q     ff          0.141             0.141              4         (30,41)
+wsinterface/led_counter[6]          net         0.226             0.367              4         (30,41)
+LUT__1395|in[3]                     lut         0.000             0.367              4         (30,41)
+LUT__1395|out                       lut         0.000             0.367              2         (30,41)
+wsinterface/led_counter[6]~FF|D     ff          0.000             0.367              2         (30,41)
+
+Capture Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                                  inpad        0.000             0.000               0       (338,321)
+clk                                  inpad        0.100             0.100               2       (338,321)
+clk                                  net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                          gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                          gbuf         0.000             2.655             301       (337,321)
+clk~O                                net          0.000             2.655             301       (337,321)
+wsinterface/led_counter[6]~FF|CLK    ff           0.000             2.655             301       (30,41)  
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_counter[3]~FF|CLK   
+Path End      : wsinterface/led_counter[3]~FF|D     
+Launch Clock  : clk (RISE)                          
+Capture Clock : clk (RISE)                          
+Slack         : 0.307 (arrival time - required time)
+Delay         : 0.226                               
+
+Logic Level             : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.655
++ Clock To Q + Data Path Delay : 0.367
+--------------------------------------
+End-of-path arrival time       : 3.022
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.655
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.715
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                                  inpad        0.000             0.000               0       (338,321)
+clk                                  inpad        0.100             0.100               2       (338,321)
+clk                                  net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                          gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                          gbuf         0.000             2.655             301       (337,321)
+clk~O                                net          0.000             2.655             301       (337,321)
+wsinterface/led_counter[3]~FF|CLK    ff           0.000             2.655             301       (28,43)  
+
+Data Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+wsinterface/led_counter[3]~FF|Q     ff          0.141             0.141              5         (28,43)
+wsinterface/led_counter[3]          net         0.226             0.367              5         (28,43)
+LUT__1390|in[3]                     lut         0.000             0.367              5         (28,43)
+LUT__1390|out                       lut         0.000             0.367              2         (28,43)
+wsinterface/led_counter[3]~FF|D     ff          0.000             0.367              2         (28,43)
+
+Capture Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                                  inpad        0.000             0.000               0       (338,321)
+clk                                  inpad        0.100             0.100               2       (338,321)
+clk                                  net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                          gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                          gbuf         0.000             2.655             301       (337,321)
+clk~O                                net          0.000             2.655             301       (337,321)
+wsinterface/led_counter[3]~FF|CLK    ff           0.000             2.655             301       (28,43)  
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/low_count[9]~FF|CLK     
+Path End      : wsinterface/low_count[9]~FF|D       
+Launch Clock  : clk (RISE)                          
+Capture Clock : clk (RISE)                          
+Slack         : 0.307 (arrival time - required time)
+Delay         : 0.226                               
+
+Logic Level             : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.655
++ Clock To Q + Data Path Delay : 0.367
+--------------------------------------
+End-of-path arrival time       : 3.022
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.655
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.715
+
+Launch Clock Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+clk                                inpad        0.000             0.000               0       (338,321)
+clk                                inpad        0.100             0.100               2       (338,321)
+clk                                net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                        gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                        gbuf         0.000             2.655             301       (337,321)
+clk~O                              net          0.000             2.655             301       (337,321)
+wsinterface/low_count[9]~FF|CLK    ff           0.000             2.655             301       (30,59)  
+
+Data Path
+            name               model name   delay (ns)  cumulative delay (ns) pins on net    location
+=======================================================================================================
+wsinterface/low_count[9]~FF|Q     ff          0.141             0.141              7         (30,59)
+wsinterface/low_count[9]          net         0.226             0.367              7         (30,59)
+LUT__1379|in[3]                   lut         0.000             0.367              7         (30,59)
+LUT__1379|out                     lut         0.000             0.367              2         (30,59)
+wsinterface/low_count[9]~FF|D     ff          0.000             0.367              2         (30,59)
+
+Capture Clock Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+clk                                inpad        0.000             0.000               0       (338,321)
+clk                                inpad        0.100             0.100               2       (338,321)
+clk                                net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                        gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                        gbuf         0.000             2.655             301       (337,321)
+clk~O                              net          0.000             2.655             301       (337,321)
+wsinterface/low_count[9]~FF|CLK    ff           0.000             2.655             301       (30,59)  
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/low_count[5]~FF|CLK     
+Path End      : wsinterface/low_count[5]~FF|D       
+Launch Clock  : clk (RISE)                          
+Capture Clock : clk (RISE)                          
+Slack         : 0.307 (arrival time - required time)
+Delay         : 0.226                               
+
+Logic Level             : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.655
++ Clock To Q + Data Path Delay : 0.367
+--------------------------------------
+End-of-path arrival time       : 3.022
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.655
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.715
+
+Launch Clock Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+clk                                inpad        0.000             0.000               0       (338,321)
+clk                                inpad        0.100             0.100               2       (338,321)
+clk                                net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                        gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                        gbuf         0.000             2.655             301       (337,321)
+clk~O                              net          0.000             2.655             301       (337,321)
+wsinterface/low_count[5]~FF|CLK    ff           0.000             2.655             301       (28,44)  
+
+Data Path
+            name               model name   delay (ns)  cumulative delay (ns) pins on net    location
+=======================================================================================================
+wsinterface/low_count[5]~FF|Q     ff          0.141             0.141              6         (28,44)
+wsinterface/low_count[5]          net         0.226             0.367              6         (28,44)
+LUT__1367|in[3]                   lut         0.000             0.367              6         (28,44)
+LUT__1367|out                     lut         0.000             0.367              2         (28,44)
+wsinterface/low_count[5]~FF|D     ff          0.000             0.367              2         (28,44)
+
+Capture Clock Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+clk                                inpad        0.000             0.000               0       (338,321)
+clk                                inpad        0.100             0.100               2       (338,321)
+clk                                net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                        gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                        gbuf         0.000             2.655             301       (337,321)
+clk~O                              net          0.000             2.655             301       (337,321)
+wsinterface/low_count[5]~FF|CLK    ff           0.000             2.655             301       (28,44)  
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/high_count[9]~FF|CLK    
+Path End      : wsinterface/high_count[9]~FF|D      
+Launch Clock  : clk (RISE)                          
+Capture Clock : clk (RISE)                          
+Slack         : 0.307 (arrival time - required time)
+Delay         : 0.226                               
+
+Logic Level             : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.655
++ Clock To Q + Data Path Delay : 0.367
+--------------------------------------
+End-of-path arrival time       : 3.022
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.655
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.715
+
+Launch Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                                 inpad        0.000             0.000               0       (338,321)
+clk                                 inpad        0.100             0.100               2       (338,321)
+clk                                 net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                         gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                         gbuf         0.000             2.655             301       (337,321)
+clk~O                               net          0.000             2.655             301       (337,321)
+wsinterface/high_count[9]~FF|CLK    ff           0.000             2.655             301       (36,65)  
+
+Data Path
+             name               model name   delay (ns)  cumulative delay (ns) pins on net    location
+========================================================================================================
+wsinterface/high_count[9]~FF|Q     ff          0.141             0.141              4         (36,65)
+wsinterface/high_count[9]          net         0.226             0.367              4         (36,65)
+LUT__1351|in[3]                    lut         0.000             0.367              4         (36,65)
+LUT__1351|out                      lut         0.000             0.367              2         (36,65)
+wsinterface/high_count[9]~FF|D     ff          0.000             0.367              2         (36,65)
+
+Capture Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                                 inpad        0.000             0.000               0       (338,321)
+clk                                 inpad        0.100             0.100               2       (338,321)
+clk                                 net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                         gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                         gbuf         0.000             2.655             301       (337,321)
+clk~O                               net          0.000             2.655             301       (337,321)
+wsinterface/high_count[9]~FF|CLK    ff           0.000             2.655             301       (36,65)  
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/high_count[1]~FF|CLK    
+Path End      : wsinterface/high_count[1]~FF|D      
+Launch Clock  : clk (RISE)                          
+Capture Clock : clk (RISE)                          
+Slack         : 0.307 (arrival time - required time)
+Delay         : 0.226                               
+
+Logic Level             : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.655
++ Clock To Q + Data Path Delay : 0.367
+--------------------------------------
+End-of-path arrival time       : 3.022
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.655
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.715
+
+Launch Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                                 inpad        0.000             0.000               0       (338,321)
+clk                                 inpad        0.100             0.100               2       (338,321)
+clk                                 net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                         gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                         gbuf         0.000             2.655             301       (337,321)
+clk~O                               net          0.000             2.655             301       (337,321)
+wsinterface/high_count[1]~FF|CLK    ff           0.000             2.655             301       (34,50)  
+
+Data Path
+             name               model name   delay (ns)  cumulative delay (ns) pins on net    location
+========================================================================================================
+wsinterface/high_count[1]~FF|Q     ff          0.141             0.141              5         (34,50)
+wsinterface/high_count[1]          net         0.226             0.367              5         (34,50)
+LUT__1308|in[3]                    lut         0.000             0.367              5         (34,50)
+LUT__1308|out                      lut         0.000             0.367              2         (34,50)
+wsinterface/high_count[1]~FF|D     ff          0.000             0.367              2         (34,50)
+
+Capture Clock Path
+              name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================
+clk                                 inpad        0.000             0.000               0       (338,321)
+clk                                 inpad        0.100             0.100               2       (338,321)
+clk                                 net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                         gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                         gbuf         0.000             2.655             301       (337,321)
+clk~O                               net          0.000             2.655             301       (337,321)
+wsinterface/high_count[1]~FF|CLK    ff           0.000             2.655             301       (34,50)  
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/high_count[10]~FF|CLK   
+Path End      : wsinterface/high_count[10]~FF|D     
+Launch Clock  : clk (RISE)                          
+Capture Clock : clk (RISE)                          
+Slack         : 0.307 (arrival time - required time)
+Delay         : 0.226                               
+
+Logic Level             : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.655
++ Clock To Q + Data Path Delay : 0.367
+--------------------------------------
+End-of-path arrival time       : 3.022
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.655
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.715
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                                  inpad        0.000             0.000               0       (338,321)
+clk                                  inpad        0.100             0.100               2       (338,321)
+clk                                  net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                          gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                          gbuf         0.000             2.655             301       (337,321)
+clk~O                                net          0.000             2.655             301       (337,321)
+wsinterface/high_count[10]~FF|CLK    ff           0.000             2.655             301       (28,64)  
+
+Data Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+wsinterface/high_count[10]~FF|Q     ff          0.141             0.141              4         (28,64)
+wsinterface/high_count[10]          net         0.226             0.367              4         (28,64)
+LUT__1352|in[3]                     lut         0.000             0.367              4         (28,64)
+LUT__1352|out                       lut         0.000             0.367              2         (28,64)
+wsinterface/high_count[10]~FF|D     ff          0.000             0.367              2         (28,64)
+
+Capture Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                                  inpad        0.000             0.000               0       (338,321)
+clk                                  inpad        0.100             0.100               2       (338,321)
+clk                                  net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                          gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                          gbuf         0.000             2.655             301       (337,321)
+clk~O                                net          0.000             2.655             301       (337,321)
+wsinterface/high_count[10]~FF|CLK    ff           0.000             2.655             301       (28,64)  
+
+++++ Path 10 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : wsinterface/led_counter[4]~FF|CLK   
+Path End      : wsinterface/led_counter[4]~FF|D     
+Launch Clock  : clk (RISE)                          
+Capture Clock : clk (RISE)                          
+Slack         : 0.307 (arrival time - required time)
+Delay         : 0.226                               
+
+Logic Level             : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.655
++ Clock To Q + Data Path Delay : 0.367
+--------------------------------------
+End-of-path arrival time       : 3.022
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.655
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.715
+
+Launch Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                                  inpad        0.000             0.000               0       (338,321)
+clk                                  inpad        0.100             0.100               2       (338,321)
+clk                                  net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                          gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                          gbuf         0.000             2.655             301       (337,321)
+clk~O                                net          0.000             2.655             301       (337,321)
+wsinterface/led_counter[4]~FF|CLK    ff           0.000             2.655             301       (28,41)  
+
+Data Path
+             name                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================
+wsinterface/led_counter[4]~FF|Q     ff          0.141             0.141              4         (28,41)
+wsinterface/led_counter[4]          net         0.226             0.367              4         (28,41)
+LUT__1392|in[3]                     lut         0.000             0.367              4         (28,41)
+LUT__1392|out                       lut         0.000             0.367              2         (28,41)
+wsinterface/led_counter[4]~FF|D     ff          0.000             0.367              2         (28,41)
+
+Capture Clock Path
+              name                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================
+clk                                  inpad        0.000             0.000               0       (338,321)
+clk                                  inpad        0.100             0.100               2       (338,321)
+clk                                  net          0.160             0.260               2       (338,321)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                          gbuf         2.395             2.655               2       (337,321)
+CLKBUF__0|O                          gbuf         0.000             2.655             301       (337,321)
+clk~O                                net          0.000             2.655             301       (337,321)
+wsinterface/led_counter[4]~FF|CLK    ff           0.000             2.655             301       (28,41)  
+
+---------- Path Details for Min Critical Paths (end) ---------------
+
