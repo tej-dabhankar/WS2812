@@ -1,12 +1,12 @@
 sep=\t
 Module Resource Usage Distribution Estimates
-Generated at: Apr 30, 2024 12:37:27
+Generated at: Jun 14, 2024 12:43:34
 
 Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
 
 Module	         FFs	        ADDs	        LUTs	      RAMs	 DSP/MULTs
-ws2812_phy:ws2812_phy                                       	    3233(0)	     141(0)	    3369(0)	   675(0)	     0(0)	
- +uartrx:test_uart_rx                                       	     28(28)	       0(0)	     60(60)	     0(0)	     0(0)	
+ws2812_phy:ws2812_phy                                       	    2288(0)	     208(0)	    2610(0)	    46(0)	     0(0)	
+ +uartrx:test_uart_rx                                       	     28(28)	       0(0)	     61(61)	     0(0)	     0(0)	
  +ws_wr_fifo:phy_fifo                                       	     104(0)	      30(0)	      50(0)	     1(0)	     0(0)	
   +u_efx_fifo_top:efx_fifo_top_9387c6d4d1f0474eab9d36a0a0b9e8a2_renamed_due_excessive_length_1	     104(4)	      30(0)	      50(0)	     1(0)	     0(0)	
    +xefx_fifo_ram:efx_fifo_ram_9387c6d4d1f0474eab9d36a0a0b9e8a2(OUTPUT_REG=0,RAM_MUX_RATIO=1)	       0(0)	       0(0)	       0(0)	     1(1)	     0(0)	
@@ -33,6 +33,6 @@ ws2812_phy:ws2812_phy                                       	    3233(0)	     14
           +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=4)	       0(0)	       0(0)	       3(1)	     0(0)	     0(0)	
            +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=3)	       0(0)	       0(0)	       2(1)	     0(0)	     0(0)	
             +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=2)	       0(0)	       0(0)	       1(1)	     0(0)	     0(0)	
- +wsctrl:ws2812_ctrl                                        	     42(42)	       0(0)	     47(47)	     0(0)	     0(0)	
- +wsinterface:ws2812_interface                              	     72(72)	       0(0)	   242(242)	   24(24)	     0(0)	
- +edb_top_inst:edb_top                                      	 2987(2987)	   111(111)	 2970(2970)	 650(650)	     0(0)	
+ +wsctrl:ws2812_ctrl                                        	     43(43)	       0(0)	     50(50)	     0(0)	     0(0)	
+ +wsinterface:ws2812_interface                              	     73(73)	       0(0)	   212(212)	   24(24)	     0(0)	
+ +edb_top_inst:edb_top                                      	 2040(2040)	   178(178)	 2237(2237)	   21(21)	     0(0)	

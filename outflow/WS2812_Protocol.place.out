@@ -13,51 +13,60 @@ a free open source code under MIT license.
 Running Placement and Routing for Family "Trion", Device "T120F324" ...
 
 ***** Beginning stage netlist pre-processing ... *****
-Successfully Read in Verific binary Netlist dump file "/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.vdb".
+Successfully Read in Verific binary Netlist dump file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.dbg.vdb".
 ***** Beginning VDB Netlist Checker ... *****
-VDB Netlist Checker took 0.00891781 seconds.
-	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
-VDB Netlist Checker virtual memory usage: begin = 199.96 MB, end = 199.96 MB, delta = 0 MB
-VDB Netlist Checker resident set memory usage: begin = 63.116 MB, end = 63.372 MB, delta = 0.256 MB
-	VDB Netlist Checker peak resident set memory usage = 2523.63 MB
+VDB Netlist Checker took 0.0568253 seconds.
+	VDB Netlist Checker took 0.05 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 199.968 MB, end = 199.968 MB, delta = 0 MB
+VDB Netlist Checker resident set memory usage: begin = 53.904 MB, end = 54.032 MB, delta = 0.128 MB
+	VDB Netlist Checker peak resident set memory usage = 2283.24 MB
 ***** Ending VDB Netlist Checker ... *****
-Reading core interface constraints from '/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.interface.csv'.
-Successfully processed interface constraints file "/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.interface.csv".
+Reading core interface constraints from '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.csv'.
+Successfully processed interface constraints file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.csv".
 Found 0 constant generator nets.
 Pass 0: Swept away 0 nets with no fanout.
-Pass 0: Swept away 0 blocks with no fanout.
-Swept away 0 nets and 0 blocks in total.
+logical_block #5(jtag_inst1_DRCK) has no fanout.
+Removing input.
+logical_block #7(jtag_inst1_RUNTEST) has no fanout.
+Removing input.
+logical_block #12(jtag_inst1_TMS) has no fanout.
+Removing input.
+Pass 0: Swept away 3 blocks with no fanout.
+Pass 1: Swept away 0 nets with no fanout.
+Pass 1: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 3 blocks in total.
 Removed 0 LUT buffers.
-Successfully created VPR logical netlist from Verific binary DataBase file "/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.vdb".
-Netlist pre-processing took 0.0214728 seconds.
-	Netlist pre-processing took 0.02 seconds (approximately) in total CPU time.
-Netlist pre-processing virtual memory usage: begin = 199.96 MB, end = 199.96 MB, delta = 0 MB
-Netlist pre-processing resident set memory usage: begin = 62.476 MB, end = 63.756 MB, delta = 1.28 MB
-	Netlist pre-processing peak resident set memory usage = 2523.63 MB
+Sweeped away 3 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.dbg.vdb".
+Netlist pre-processing took 0.125806 seconds.
+	Netlist pre-processing took 0.12 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 199.968 MB, end = 203.268 MB, delta = 3.3 MB
+Netlist pre-processing resident set memory usage: begin = 53.264 MB, end = 57.36 MB, delta = 4.096 MB
+	Netlist pre-processing peak resident set memory usage = 2283.24 MB
 ***** Ending stage netlist pre-processing *****
 
 ***** Beginning stage pre-packing ... *****
 ***** Ending stage pre-packing *****
 
 ***** Beginning stage packing ... *****
-Generate proto netlist for file "/home/kaush/Desktop/Efinity/WS2812_Protocol/work_pnr/WS2812_Protocol.net_proto" took 0.000385 seconds
-Creating IO constraints file '/home/kaush/Desktop/Efinity/WS2812_Protocol/work_pnr/WS2812_Protocol.io_place'
-Packing took 0.00454116 seconds.
+Generate proto netlist for file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.net_proto" took 0.00594 seconds
+Creating IO constraints file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.io_place'
+Packing took 0.0230468 seconds.
 	Packing took 0.01 seconds (approximately) in total CPU time.
-Packing virtual memory usage: begin = 202.712 MB, end = 202.712 MB, delta = 0 MB
-Packing resident set memory usage: begin = 66.7 MB, end = 66.956 MB, delta = 0.256 MB
-	Packing peak resident set memory usage = 2523.63 MB
+Packing virtual memory usage: begin = 210.744 MB, end = 215.072 MB, delta = 4.328 MB
+Packing resident set memory usage: begin = 64.784 MB, end = 69.136 MB, delta = 4.352 MB
+	Packing peak resident set memory usage = 2283.24 MB
 ***** Ending stage packing *****
 
 ***** Beginning stage packed netlist loading ... *****
-Read proto netlist file /home/kaush/Desktop/Efinity/WS2812_Protocol/work_pnr/WS2812_Protocol.net_proto
-Read proto netlist for file "/home/kaush/Desktop/Efinity/WS2812_Protocol/work_pnr/WS2812_Protocol.net_proto" took 0.000129 seconds
-Setup net and block data structure took 0.012405 seconds
-Packed netlist loading took 0.0314273 seconds.
-	Packed netlist loading took 0.02 seconds (approximately) in total CPU time.
-Packed netlist loading virtual memory usage: begin = 202.712 MB, end = 504.28 MB, delta = 301.568 MB
-Packed netlist loading resident set memory usage: begin = 66.956 MB, end = 75.004 MB, delta = 8.048 MB
-	Packed netlist loading peak resident set memory usage = 2523.63 MB
+Read proto netlist file /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.net_proto
+Read proto netlist for file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.net_proto" took 0.001101 seconds
+Setup net and block data structure took 0.117522 seconds
+Packed netlist loading took 0.619046 seconds.
+	Packed netlist loading took 0.7 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 215.072 MB, end = 689.604 MB, delta = 474.532 MB
+Packed netlist loading resident set memory usage: begin = 69.136 MB, end = 126.16 MB, delta = 57.024 MB
+	Packed netlist loading peak resident set memory usage = 2283.24 MB
 ***** Ending stage packed netlist loading *****
 
 ***** Beginning stage pre-placement ... *****
@@ -69,13 +78,16 @@ No SDC file found.  Using default timing constraint of 1 ns.
 NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
 
 ***** Beginning stage initial placement ... *****
-Reading core interface constraints from '/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.interface.csv'.
-Successfully processed interface constraints file "/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.interface.csv".
-Writing IO placement constraints to '/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.interface.io'.
+Reading core interface constraints from '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.csv'.
+Successfully processed interface constraints file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.csv".
+Writing IO placement constraints to '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.io'.
 
-Reading placement constraints from '/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.interface.io'.
+Reading placement constraints from '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.io'.
 
-Reading placement constraints from '/home/kaush/Desktop/Efinity/WS2812_Protocol/work_pnr/WS2812_Protocol.io_place'.
+Reading placement constraints from '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.io_place'.
+WARNING(1): Clock driver jtag_inst1_TCK should use the dedicated clock pad.
+WARNING(2): Clock input pad, clk, of net, clk, drives both clock buffer and logic. Expect extra clock skew.
+The driver, jtag_inst1_RESET, of control net, jtag_inst1_RESET, should be placed at a dedicated control pad location.
 ***** Ending stage initial placement *****
 
 ***** Beginning stage placement ... *****
@@ -83,149 +95,129 @@ Found 22 synchronizers as follows:
 	Synchronizer 0:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][9]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[9]~FF
 	Synchronizer 1:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][8]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[8]~FF
 	Synchronizer 2:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][7]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[7]~FF
-	Synchronizer 3:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[1]~FF
+	Synchronizer 3:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[6]~FF
 	Synchronizer 4:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][9]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[9]~FF
 	Synchronizer 5:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][8]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[8]~FF
 	Synchronizer 6:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][7]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[7]~FF
-	Synchronizer 7:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[1]~FF
-	Synchronizer 8:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[0]~FF
-	Synchronizer 9:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[4]~FF
-	Synchronizer 10:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[5]~FF
-	Synchronizer 11:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[6]~FF
+	Synchronizer 7:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[6]~FF
+	Synchronizer 8:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[5]~FF
+	Synchronizer 9:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[1]~FF
+	Synchronizer 10:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[0]~FF
+	Synchronizer 11:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[4]~FF
 	Synchronizer 12:  ws_wr_fifo/u_efx_fifo_top/genblk2.wr_rst[0]~FF ws_wr_fifo/u_efx_fifo_top/genblk2.wr_rst[1]~FF
-	Synchronizer 13:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[2]~FF
+	Synchronizer 13:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[3]~FF
 	Synchronizer 14:  ws_wr_fifo/u_efx_fifo_top/genblk2.rd_rst[0]~FF ws_wr_fifo/u_efx_fifo_top/genblk2.rd_rst[1]~FF
-	Synchronizer 15:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[0]~FF
-	Synchronizer 16:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[3]~FF
-	Synchronizer 17:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[6]~FF
-	Synchronizer 18:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[5]~FF
-	Synchronizer 19:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[4]~FF
-	Synchronizer 20:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[3]~FF
-	Synchronizer 21:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[2]~FF
-Create /home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol_after_qp.qdelay
+	Synchronizer 15:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[5]~FF
+	Synchronizer 16:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[2]~FF
+	Synchronizer 17:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[4]~FF
+	Synchronizer 18:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[0]~FF
+	Synchronizer 19:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[1]~FF
+	Synchronizer 20:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[2]~FF
+	Synchronizer 21:  ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[3]~FF
+Create /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol_after_qp.qdelay
 QPLACER STATIC DB USAGE DISABLED
-Starting Global Placer with 4 threads ...
+Starting Global Placer with 6 threads ...
 
  ----------     -------  --------------     -------
   Iteration       WHPWL Worst Slack (ps) Convergence
  ----------     -------  --------------     -------
-          1       58282           -3494        12.3%
-          2       34292           -3466        14.3%
-          3       35607           -3300        14.5%
-          4       24920           -3636        15.3%
-          5       18976           -3636        18.1%
-          6       10516           -4040        19.0%
-          7        8386           -5110        25.2%
-          8        6313           -6283        35.2%
-          9        5745           -7295        40.5%
-         10        5679           -7649        43.9%
-         11        5937           -6911        47.0%
-         12        5579           -6733        50.2%
-         13        5499           -7882        50.7%
-         14        5358           -7293        52.7%
-         15        5197           -7857        53.4%
-         16        5035           -7867        53.9%
-         17        4977           -7485        55.8%
-         18        4944           -7137        57.5%
-         19        4812           -7754        58.0%
-         20        4772           -8129        58.7%
-         21        4182           -7893        60.5%
-         22        4173           -7878        62.0%
-         23        4391           -7658        64.0%
-         24        3959           -7882        66.2%
-         25        4115           -8016        66.2%
-         26        4221           -7684        68.0%
-         27        3949           -7549        69.2%
-         28        4091           -7975        71.0%
-         29        4083           -8001        71.1%
-         30        4026           -7670        71.9%
-         31        4039           -7704        71.9%
-         32        3972           -7704        72.0%
-         33        4096           -7678        72.7%
-         34        3948           -7631        74.3%
-         35        3852           -8099        74.7%
-         36        3763           -7458        75.8%
-         37        3743           -7232        76.8%
-         38        3729           -7564        77.5%
-         39        3706           -7805        78.7%
-         40        3672           -7558        80.1%
-         41        3668           -7727        81.2%
-         42        3752           -7544        81.2%
-         43        3739           -8154        82.5%
-         44        3787           -7933        83.0%
-         45        3657           -7918        84.8%
-         46        3654           -7918        85.6%
-         47        3615           -7918        86.5%
-         48        3542           -7918        86.8%
-         49        3636           -7918        87.1%
-         50        3581           -8106        87.9%
-         51        3644           -8106        88.8%
-         52        3687           -7918        89.5%
-         53        3678           -7918        90.3%
-         54        3654           -8266        90.8%
-         55        3686           -8347        92.1%
-         56        3718           -8347        92.6%
-         57        3705           -8347        93.4%
-         58        3700           -8347        95.0%
-         59        3505           -8347        95.1%
-         60        3581           -8362        96.2%
-         61        3539           -8096        97.9%
-         62        3596           -8540        98.9%
-         63        3576           -8096        98.9%
-         64        3598           -8142        99.2%
-         65        3600           -8269        99.2%
+          1     7332731           -5517         1.6%
+          2     6803722           -5262         2.7%
+          3     6453626           -5598         3.4%
+          4     5791340           -5935         3.7%
+          5     2389342           -6149         5.3%
+          6      920703           -6167        10.9%
+          7      423988           -7180        22.7%
+          8      243513           -8063        32.3%
+          9      196444           -8937        39.0%
+         10      187562           -9635        46.4%
+         11      189113           -8731        49.3%
+         12      164756           -8986        49.3%
+         13      184865           -8758        53.8%
+         14      175268           -8845        53.8%
+         15      177674           -8847        54.6%
+         16      173744           -8973        54.7%
+         17      172738           -8563        57.6%
+         18      176340           -8915        57.6%
+         19      175931           -9106        57.6%
+         20      173450           -8960        59.3%
+         21      167470           -8902        59.3%
+         22      169469           -8914        60.9%
+         23      167212           -8634        60.9%
+         24      171218           -9376        61.6%
+         25      163674           -8982        61.6%
+         26      169107           -9570        65.5%
+         27      160666           -9373        66.1%
+         28      168392           -9414        69.4%
+         29      161028           -9584        69.4%
+         30      169535           -9524        71.6%
+         31      156247           -9416        71.6%
+         32      168415           -9836        74.1%
+         33      156236           -9173        74.1%
+         34      171350           -9355        74.2%
+         35      152456           -9550        74.2%
+         36      170987           -9332        76.3%
+         37      154355           -9524        76.3%
+         38      170721           -9671        77.8%
+         39      155392           -9770        77.8%
+         40      171559           -9655        79.5%
+         41      157458           -9821        79.5%
+         42      170884          -10015        81.2%
+         43      151532           -9728        81.2%
+         44      166978           -9598        84.1%
+         45      150170           -9916        84.1%
 Starting Annealer
 
  ----------     -------  --------------     -------
   Iteration       WHPWL  Delay Max (ps)     R Limit
  ----------     -------  --------------     -------
-          0        3539            9060        30.0
-          1        2856            9059        30.0
-          2        2785            8456        30.0
-          3        2529            8217        30.0
-          4        2300            8275        30.0
-          5        2156            8157        30.0
-          6        2141            8142        30.0
-          7        2130            7772        30.0
-          8        2029            7772        30.0
-          9        1912            7623        29.8
-         10        1863            7623        29.6
-         11        1824            7558        28.8
-         12        1818            7558        28.1
-         13        1848            7558        27.3
-         14        1863            7558        26.7
-         15        1801            7558        26.0
-         16        1762            7558        25.1
-         17        1743            7558        24.2
-         18        1700            7558        23.3
-         19        1642            7407        22.3
-         20        1605            7407        21.5
-         21        1584            7363        20.3
-         22        1567            7350        19.3
-         23        1560            7202        18.4
-         24        1539            7202        17.7
-         25        1509            7231        16.8
-         26        1485            7231        16.0
-         27        1482            7231        15.2
-         28        1441            7232        14.3
-         29        1421            7203        13.5
-         30        1409            7300        12.7
-         31        1402            7256        11.6
-         32        1376            7256        10.5
-Generate /home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol_after_qp.qdelay
-Placement successful: 513 cells are placed
-Peak congestion smeared over 1/4 of the chip is 0.0290665 at 0,0
-Congestion-weighted HPWL per net: 1.46661
+          0      156236           13102        30.0
+          1      139360           11939        30.0
+          2      107491           12040        29.8
+          3       96752           11414        29.2
+          4       89496           11146        28.4
+          5       87033           11025        27.5
+          6       84812           11088        26.4
+          7       82118           10758        25.2
+          8       80589           10758        24.1
+          9       80920           10552        22.8
+         10       80497           10169        21.6
+         11       79614           10476        20.5
+         12       79319           10196        19.4
+         13       79104           10162        18.2
+         14       78394           10162        17.1
+         15       77220           10201        16.0
+         16       76580           10201        15.0
+         17       76030           10201        14.0
+         18       75289           10066        13.1
+         19       74057           10066        12.2
+         20       72561           10063        11.4
+         21       71667           10322        10.6
+         22       70822           10310         9.8
+         23       70119           10310         9.1
+         24       69339           10366         8.5
+         25       68134           10561         7.9
+         26       67757           10561         7.3
+         27       67094           10561         6.8
+         28       66222           10762         6.2
+         29       65612           10408         5.8
+         30       65037           10407         5.3
+         31       64087           10015         4.9
+         32       62285           10274         4.4
+Generate /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol_after_qp.qdelay
+Placement successful: 4216 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.206998 at 0,0
+Congestion-weighted HPWL per net: 10.1072
 
-Reading placement constraints from '/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.qplace'.
-Finished Realigning Types (114 blocks needed type change)
+Reading placement constraints from '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.qplace'.
+Finished Realigning Types (866 blocks needed type change)
 
 Completed placement consistency check successfully.
-Successfully created FPGA place file '/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.place'
-Placement took 3.20118 seconds.
-	Placement took 5.05 seconds (approximately) in total CPU time.
-Placement virtual memory usage: begin = 511.996 MB, end = 1169.29 MB, delta = 657.292 MB
-Placement resident set memory usage: begin = 83.452 MB, end = 443.028 MB, delta = 359.576 MB
-	Placement peak resident set memory usage = 2523.63 MB
+Successfully created FPGA place file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.place'
+Placement took 8.634 seconds.
+	Placement took 17.35 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 706.356 MB, end = 1671.42 MB, delta = 965.06 MB
+Placement resident set memory usage: begin = 143.312 MB, end = 675.1 MB, delta = 531.788 MB
+	Placement peak resident set memory usage = 2283.24 MB
 ***** Ending stage placement *****
 

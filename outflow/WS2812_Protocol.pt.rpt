@@ -1,7 +1,7 @@
 
 Efinity Interface Designer Report
 Version: 2023.2.307
-Date: 2024-04-30 12:40
+Date: 2024-06-14 12:44
 
 Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
 
@@ -36,7 +36,7 @@ clkmux: 2 / 2 (100.0%)
 control: 0 / 1 (0.0%)
 ddr: 0 / 1 (0.0%)
 gpio: 2 / 38 (5.26%)
-jtag: 0 / 4 (0.0%)
+jtag: 1 / 4 (25.0%)
 lvds_bg: 0 / 2 (0.0%)
 lvds_rx: 1.0 / 26 (3.85%)
 	gpio: 2
@@ -284,7 +284,21 @@ No Configuration Control was configured
 
 ---------- 15. JTAG Usage Summary (begin) ----------
 
-No JTAG was configured
+Instance Name                                     : jtag_inst1
+
+Resource                                          : JTAG_USER1
+
+Capture Pin Name                                  : jtag_inst1_CAPTURE
+Gated Test Clock Pin Name                         : jtag_inst1_DRCK
+Reset Pin Name                                    : jtag_inst1_RESET
+Run Test Pin Name                                 : jtag_inst1_RUNTEST
+User Instruction Active Pin Name                  : jtag_inst1_SEL
+Shift Pin Name                                    : jtag_inst1_SHIFT
+Test Clock Pin Name                               : jtag_inst1_TCK
+Test Data Pin Name                                : jtag_inst1_TDI
+Test Data Pin Name                                : jtag_inst1_TDO
+Test Mode Select Pin Name                         : jtag_inst1_TMS
+Update Pin Name                                   : jtag_inst1_UPDATE
 
 ---------- JTAG Usage Summary (end) ----------
 

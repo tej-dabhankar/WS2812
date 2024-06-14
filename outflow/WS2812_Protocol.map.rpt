@@ -1,33 +1,33 @@
 Efinity Synthesis report for project WS2812_Protocol
 Version: 2023.2.307
-Generated at: Apr 30, 2024 12:36:33
+Generated at: Jun 14, 2024 12:42:43
 Copyright (C) 2013 - 2023  All rights reserved.
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 Top-level Entity Name : ws2812_phy
 
 ### ### File List (begin) ### ### ###
-/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/test_uart_rx.v
-/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_ctrl.v
-/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v
-/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_phy.v
-/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/test_uart_rx.v
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v
 ### ### File List (end) ### ### ###
 
-"MEM|SYN-0677" : ... Zero initialization of uninitialized memory block 'ram'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo/phy_fifo.v:719)
-"MEM|SYN-0677" : ... Zero initialization of uninitialized memory block 'led_reg'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
-"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$g03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
-"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$f03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
-"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$e03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
-"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$d03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
-"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$c03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
-"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$b03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
-"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$03'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
-"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$3'. (/home/kaush/Desktop/Efinity/WS2812_Protocol/Design/ws2812_interface.v:28)
+"MEM|SYN-0677" : ... Zero initialization of uninitialized memory block 'ram'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v:719)
+"MEM|SYN-0677" : ... Zero initialization of uninitialized memory block 'led_reg'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
+"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$g03'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
+"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$f03'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
+"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$e03'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
+"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$d03'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
+"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$c03'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
+"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$b03'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
+"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$03'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
+"MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$3'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
 
 ### ### EFX_FF CE enables (begin) ### ### ###
 Total number of enable signals: 22
-Total number of FFs with enable signals: 91
+Total number of FFs with enable signals: 92
 CE signal <uartrx/n509>, number of controlling flip flops: 1
 CE signal <ceg_net63>, number of controlling flip flops: 11
 CE signal <ceg_net352>, number of controlling flip flops: 1
@@ -41,15 +41,15 @@ CE signal <uartrx/n503>, number of controlling flip flops: 1
 CE signal <uartrx/n506>, number of controlling flip flops: 1
 CE signal <ws_wr_fifo/u_efx_fifo_top/wr_en_int>, number of controlling flip flops: 10
 CE signal <ws_wr_fifo/u_efx_fifo_top/rd_en_int>, number of controlling flip flops: 10
-CE signal <wsctrl/n1252>, number of controlling flip flops: 2
+CE signal <wsctrl/n1252>, number of controlling flip flops: 3
 CE signal <ceg_net392>, number of controlling flip flops: 3
 CE signal <ceg_net389>, number of controlling flip flops: 8
 CE signal <ceg_net317>, number of controlling flip flops: 8
 CE signal <ceg_net246>, number of controlling flip flops: 1
-CE signal <ceg_net85>, number of controlling flip flops: 8
+CE signal <ceg_net85>, number of controlling flip flops: 7
 CE signal <ceg_net341>, number of controlling flip flops: 8
 CE signal <ceg_net350>, number of controlling flip flops: 8
-CE signal <~wsinterface/select_52/Select_0/n4>, number of controlling flip flops: 2
+CE signal <~wsinterface/select_52/Select_0/n4>, number of controlling flip flops: 3
 ### ### EFX_FF CE enables (end) ### ### ###
 
 ### ### EFX_FF SR set/reset (begin) ### ### ###
@@ -62,6 +62,36 @@ SR signal <ws_wr_fifo/u_efx_fifo_top/genblk2.rd_rst[1]>, number of controlling f
 ### ### EFX_FF SR set/reset (end) ### ### ###
 
 ### ### Sequential Elements Trimming Report (begin) ### ### ### 
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/raddr_cntr[9]~FF_frt_4
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i10
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[0]~FF_frt_13
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i1
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[1]~FF_frt_12
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[2]~FF_frt_11
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i3
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[3]~FF_frt_10
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[4]~FF_frt_9
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[5]~FF_frt_8
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[6]~FF_frt_7
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[7]~FF_frt_6
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[8]~FF_frt_5
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i9
 FF Output: wsctrl/post_wait_state[3](=0)
 ### ### Sequential Elements Trimming Report (end) ### ### ### 
 
@@ -71,14 +101,14 @@ FF Output: wsctrl/post_wait_state[3](=0)
 
 Module                                                               FFs        ADDs        LUTs      RAMs DSP/MULTs
 ------------------------------------------------------------         ---        ----        ----      ---- ---------
-ws2812_phy:ws2812_phy                                             250(0)       30(0)      377(0)     25(0)      0(0)
- +uartrx:test_uart_rx                                             28(28)        0(0)      60(60)      0(0)      0(0)
- +ws_wr_fifo:phy_fifo                                             104(0)       30(0)       48(0)      1(0)      0(0)
-  +u_efx_fifo_top:efx_fifo_top_9387c6d4d1f0474eab9d36a0a0...      104(4)       30(0)       48(0)      1(0)      0(0)
+ws2812_phy:ws2812_phy                                             251(0)       30(0)      400(0)     25(0)      0(0)
+ +uartrx:test_uart_rx                                             28(28)        0(0)      63(63)      0(0)      0(0)
+ +ws_wr_fifo:phy_fifo                                             104(0)       30(0)       50(0)      1(0)      0(0)
+  +u_efx_fifo_top:efx_fifo_top_9387c6d4d1f0474eab9d36a0a0...      104(4)       30(0)       50(0)      1(0)      0(0)
    +xefx_fifo_ram:efx_fifo_ram_9387c6d4d1f0474eab9d36a0a0...        0(0)        0(0)        0(0)      1(1)      0(0)
-   +xefx_fifo_ctl:efx_fifo_ctl_9387c6d4d1f0474eab9d36a0a0...     100(60)      30(30)      48(12)      0(0)      0(0)
+   +xefx_fifo_ctl:efx_fifo_ctl_9387c6d4d1f0474eab9d36a0a0...     100(60)      30(30)      50(12)      0(0)      0(0)
     +genblk7.xrd2wr_bin2gray:efx_fifo_bin2gray_9387c6d4d1...        0(0)        0(0)        9(9)      0(0)      0(0)
-    +genblk7.xrd2wr_addr_sync:efx_fifo_datasync_9387c6d4d...      20(20)        0(0)        0(0)      0(0)      0(0)
+    +genblk7.xrd2wr_addr_sync:efx_fifo_datasync_9387c6d4d...      20(20)        0(0)        1(1)      0(0)      0(0)
     +genblk7.xrd2wr_gray2bin:efx_fifo_gray2bin_9387c6d4d1...        0(0)        0(0)        9(1)      0(0)      0(0)
      +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6...        0(0)        0(0)        8(1)      0(0)      0(0)
       +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c...        0(0)        0(0)        7(1)      0(0)      0(0)
@@ -89,7 +119,7 @@ ws2812_phy:ws2812_phy                                             250(0)       3
            +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_...        0(0)        0(0)        2(1)      0(0)      0(0)
             +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin...        0(0)        0(0)        1(1)      0(0)      0(0)
     +genblk7.wr2rd_bin2gray:efx_fifo_bin2gray_9387c6d4d1f...        0(0)        0(0)        9(9)      0(0)      0(0)
-    +genblk7.wr2rd_addr_sync:efx_fifo_datasync_9387c6d4d1...      20(20)        0(0)        0(0)      0(0)      0(0)
+    +genblk7.wr2rd_addr_sync:efx_fifo_datasync_9387c6d4d1...      20(20)        0(0)        1(1)      0(0)      0(0)
     +genblk7.wr2rd_gray2bin:efx_fifo_gray2bin_9387c6d4d1f...        0(0)        0(0)        9(1)      0(0)      0(0)
      +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6...        0(0)        0(0)        8(1)      0(0)      0(0)
       +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c...        0(0)        0(0)        7(1)      0(0)      0(0)
@@ -99,8 +129,8 @@ ws2812_phy:ws2812_phy                                             250(0)       3
           +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9...        0(0)        0(0)        3(1)      0(0)      0(0)
            +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_...        0(0)        0(0)        2(1)      0(0)      0(0)
             +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin...        0(0)        0(0)        1(1)      0(0)      0(0)
- +wsctrl:ws2812_ctrl                                              46(46)        0(0)      52(52)      0(0)      0(0)
- +wsinterface:ws2812_interface                                    72(72)        0(0)    217(217)    24(24)      0(0)
+ +wsctrl:ws2812_ctrl                                              46(46)        0(0)      53(53)      0(0)      0(0)
+ +wsinterface:ws2812_interface                                    73(73)        0(0)    234(234)    24(24)      0(0)
 
 ### ### Module Resource Usage Distribution Estimates (end) ### ###
 
@@ -109,7 +139,7 @@ ws2812_phy:ws2812_phy                                             250(0)       3
 
  Clock     Flip-Flops   Memory Ports    Multipliers
  -----     ----------   ------------    -----------
-   clk            250             50              0
+   clk            251             50              0
 
 ### ### Clock Load Distribution Report (end) ### ###
 
@@ -118,15 +148,15 @@ ws2812_phy:ws2812_phy                                             250(0)       3
 family : Trion
 device : T120F324
 project : WS2812_Protocol
-project-xml : /home/kaush/Desktop/Efinity/WS2812_Protocol/WS2812_Protocol.xml
+project-xml : /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/WS2812_Protocol.xml
 root : ws2812_phy
-I,include : /home/kaush/Desktop/Efinity/WS2812_Protocol
-I,include : /home/kaush/Desktop/Efinity/WS2812_Protocol/ip/phy_fifo
+I,include : /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing
+I,include : /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo
 I,include : ip/phy_fifo
-output-dir : /home/kaush/Desktop/Efinity/WS2812_Protocol/outflow
-work-dir : /home/kaush/Desktop/Efinity/WS2812_Protocol/work_syn
-write-efx-verilog : /home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.map.v
-binary-db : /home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.vdb
+output-dir : /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow
+work-dir : /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_syn
+write-efx-verilog : /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.map.v
+binary-db : /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.vdb
 insert-ios : 0
 max-carry-cascade : 640
 max_mult : -1
@@ -141,14 +171,14 @@ INPUT  PORTS    : 	2
 OUTPUT PORTS    : 	2
 
 EFX_ADD         : 	30
-EFX_LUT4        : 	377
-   1-2  Inputs  : 	125
-   3    Inputs  : 	97
-   4    Inputs  : 	155
-EFX_FF          : 	250
+EFX_LUT4        : 	400
+   1-2  Inputs  : 	118
+   3    Inputs  : 	103
+   4    Inputs  : 	179
+EFX_FF          : 	251
 EFX_RAM_5K      : 	25
 EFX_GBUFCE      : 	1
 ### ### Resource Summary (end) ### ### ###
 
-Plain synthesis (without verilog dump and post-map checks) time : 7s
-Elapsed synthesis time : 7s
+Plain synthesis (without verilog dump and post-map checks) time : 8s
+Elapsed synthesis time : 8s

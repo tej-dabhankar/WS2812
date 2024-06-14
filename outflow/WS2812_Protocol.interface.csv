@@ -1,7 +1,7 @@
 
 # Efinity Interface Configuration
 # Version: 2023.2.307
-# Date: 2024-04-30 12:40
+# Date: 2024-06-14 12:44
 
 # Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
 
@@ -9,5 +9,16 @@
 input, 338, 321, 1, __bypass__, clk
 output, 327, 643, 0, __bypass__, data
 input, 0, 283, 1, __bypass__, i_rx_serial
+input, 0, 6, 3, __bypass__, jtag_inst1_CAPTURE
+input, 0, 2, 3, __bypass__, jtag_inst1_DRCK
+input, 0, 4, 3, __bypass__, jtag_inst1_RESET
+input, 0, 5, 1, __bypass__, jtag_inst1_RUNTEST
+input, 0, 2, 1, __bypass__, jtag_inst1_SEL
+input, 0, 5, 3, __bypass__, jtag_inst1_SHIFT
+input, 0, 4, 1, __bypass__, jtag_inst1_TCK
+input, 0, 3, 1, __bypass__, jtag_inst1_TDI
+output, 0, 2, 0, __bypass__, jtag_inst1_TDO
+input, 0, 3, 3, __bypass__, jtag_inst1_TMS
+input, 0, 6, 1, __bypass__, jtag_inst1_UPDATE
 output, 323, 643, 0, __bypass__, led
 optional input, 338, 9, 1, __bypass__, pll_clk

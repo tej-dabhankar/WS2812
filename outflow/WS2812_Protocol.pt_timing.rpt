@@ -1,7 +1,7 @@
 
 Efinity Interface Designer Timing Report
 Version: 2023.2.307
-Date: 2024-04-30 12:40
+Date: 2024-06-14 12:44
 
 Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
 
@@ -52,3 +52,14 @@ Non-registered LVDS GPIO Configuration:
 +---------------+----------+-----------+----------+----------+
 
 ---------- LVDS Rx Timing Report (end) ----------
+
+---------- 4. JTAG Timing Report (begin) ----------
+
++---------------+----------------+-----------+----------+----------+
+| Instance Name |    Pin Name    | Parameter | Max (ns) | Min (ns) |
++---------------+----------------+-----------+----------+----------+
+|   jtag_inst1  | jtag_inst1_TDI |  JTAG_IN  |  2.415   |  1.208   |
+|   jtag_inst1  | jtag_inst1_TMS |  JTAG_IN  |  1.755   |  0.877   |
++---------------+----------------+-----------+----------+----------+
+
+---------- JTAG Timing Report (end) ----------

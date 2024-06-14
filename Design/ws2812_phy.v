@@ -13,8 +13,8 @@ parameter CLKS_PER_BIT      = 435;
 parameter PHY_FIFO_WIDTH    = 8;
 
 
-reg [19:0]  data_depth  = 'd3;
-reg [11:0]  num_leds    = 'd88;
+reg [19:0]  data_depth  = 'd5;
+reg [11:0]  num_leds    = 'd86;
 
 /* Connecting Wires */
 wire                        w_rx_dv;

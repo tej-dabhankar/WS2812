@@ -5,19 +5,19 @@ Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
 
 Compiled: Dec 15 2023.
 
-Using source file "/home/kaush/Desktop/Efinity/WS2812_Protocol/work_pnr/WS2812_Protocol.lbf"
+Using source file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.lbf"
 Generating HEX programming file for device "T120F324", family "Trion"
-Using periphery source file "/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.lpf"
-Generating bit file: "/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.bit"
+Using periphery source file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.lpf"
+Generating bit file: "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.bit"
 HEX Generation Options Summary:
 	Listing options specified to bitstream generation:
 	spi_low_power_mode                       = on
 	oscillator_clock_divider                 = DIV8
 	io_weak_pullup                           = on
 	release_tri_then_reset                   = on
-Finished generating "/home/kaush/Desktop/Efinity/WS2812_Protocol/outflow/WS2812_Protocol.hex"
-Efinity Bitstream Generator took 5.51717 seconds.
-	Efinity Bitstream Generator took 5.43 seconds (approximately) in total CPU time.
-Efinity Bitstream Generator virtual memory usage: begin = 57.02 MB, end = 195.92 MB, delta = 138.9 MB
-Efinity Bitstream Generator resident set memory usage: begin = 10.112 MB, end = 150.732 MB, delta = 140.62 MB
-	Efinity Bitstream Generator peak resident set memory usage = 2523.66 MB
+Finished generating "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.hex"
+Efinity Bitstream Generator took 6.79357 seconds.
+	Efinity Bitstream Generator took 6.21 seconds (approximately) in total CPU time.
+Efinity Bitstream Generator virtual memory usage: begin = 57.024 MB, end = 196.156 MB, delta = 139.132 MB
+Efinity Bitstream Generator resident set memory usage: begin = 7.04 MB, end = 145.796 MB, delta = 138.756 MB
+	Efinity Bitstream Generator peak resident set memory usage = 1560.24 MB
