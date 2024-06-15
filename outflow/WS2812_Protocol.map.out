@@ -30,21 +30,20 @@ INFO: default VHDL library search path is now "/home/tejas/Downloads/efinity/202
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/test_uart_rx.v(13): WARNING: parameter 's_RX_STOP_BIT' becomes localparam in 'test_uart_rx' with formal parameter declaration list (VERI-1199)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/test_uart_rx.v(14): WARNING: parameter 's_CLEANUP' becomes localparam in 'test_uart_rx' with formal parameter declaration list (VERI-1199)
 -- Analyzing Verilog file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v' (VERI-1482)
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v(51): WARNING: literal value 'h10 truncated to fit in 4 bits (VERI-1208)
 -- Analyzing Verilog file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v' (VERI-1482)
 -- Analyzing Verilog file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v' (VERI-1482)
 -- Analyzing Verilog file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v' (VERI-1482)
-INFO: Analysis took 0.0162254 seconds.
-INFO: 	Analysis took 0.01 seconds (approximately) in total CPU time.
-INFO: Analysis virtual memory usage: begin = 192.484 MB, end = 192.616 MB, delta = 0.132 MB
-INFO: Analysis resident set memory usage: begin = 65.236 MB, end = 66.516 MB, delta = 1.28 MB
-INFO: 	Analysis peak resident set memory usage = 2282.07 MB
+INFO: Analysis took 0.0225215 seconds.
+INFO: 	Analysis took 0.02 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 192.48 MB, end = 192.612 MB, delta = 0.132 MB
+INFO: Analysis resident set memory usage: begin = 65.052 MB, end = 66.332 MB, delta = 1.28 MB
+INFO: 	Analysis peak resident set memory usage = 3073.79 MB
 INFO: ***** Ending Analysis ... *****
 INFO: ***** Beginning Elaboration ... *****
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v(48): WARNING: port 'almost_full_o' remains unconnected for this instance (VERI-1927)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v(48): WARNING: port 'a_rst_i' is not connected on this instance (VERI-2435)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v(1): INFO: compiling module 'ws2812_phy' (VERI-1018)
-/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v(16): WARNING: using initial value of 'data_depth' since it is never assigned (VERI-1220)
-/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v(17): WARNING: using initial value of 'num_leds' since it is never assigned (VERI-1220)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/test_uart_rx.v(1): INFO: compiling module 'test_uart_rx' (VERI-1018)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/test_uart_rx.v(53): WARNING: expression size 12 truncated to fit in target size 11 (VERI-1209)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/test_uart_rx.v(60): WARNING: expression size 12 truncated to fit in target size 11 (VERI-1209)
@@ -75,10 +74,13 @@ INFO: ***** Beginning Elaboration ... *****
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v(107): WARNING: actual bit length 9 differs from formal bit length 10 for port 'rd_datacount_o' (VERI-1330)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v(89): WARNING: input port 'a_wr_rst_i' is not connected on this instance (VDB-1013)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v(1): INFO: compiling module 'ws2812_ctrl' (VERI-1018)
-/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v(93): WARNING: expression size 32 truncated to fit in target size 8 (VERI-1209)
-/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v(101): WARNING: expression size 21 truncated to fit in target size 20 (VERI-1209)
-/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v(117): WARNING: expression size 20 truncated to fit in target size 11 (VERI-1209)
-/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v(58): WARNING: actual bit length 20 differs from formal bit length 11 for port 'address' (VERI-1330)
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v(25): WARNING: expression size 13 truncated to fit in target size 12 (VERI-1209)
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v(26): WARNING: expression size 32 truncated to fit in target size 12 (VERI-1209)
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v(117): WARNING: expression size 32 truncated to fit in target size 8 (VERI-1209)
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v(133): WARNING: expression size 21 truncated to fit in target size 20 (VERI-1209)
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v(150): WARNING: expression size 20 truncated to fit in target size 11 (VERI-1209)
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v(33): WARNING: net 'r_address[10]' does not have a driver (VDB-1002)
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v(59): WARNING: actual bit length 20 differs from formal bit length 11 for port 'address' (VERI-1330)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v(1): INFO: compiling module 'ws2812_interface' (VERI-1018)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v(28): INFO: extracting RAM for identifier 'led_reg' (VERI-2571)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v(82): WARNING: expression size 32 truncated to fit in target size 11 (VERI-1209)
@@ -86,13 +88,13 @@ INFO: ***** Beginning Elaboration ... *****
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v(97): WARNING: expression size 32 truncated to fit in target size 5 (VERI-1209)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v(101): WARNING: expression size 21 truncated to fit in target size 20 (VERI-1209)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v(107): WARNING: expression size 13 truncated to fit in target size 12 (VERI-1209)
-/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v(66): WARNING: actual bit length 20 differs from formal bit length 8 for port 'address' (VERI-1330)
+/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v(67): WARNING: actual bit length 20 differs from formal bit length 8 for port 'address' (VERI-1330)
 /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v(40): WARNING: input port 'a_rst_i' remains unconnected for this instance (VDB-1053)
-INFO: Elaboration took 0.0271255 seconds.
-INFO: 	Elaboration took 0.02 seconds (approximately) in total CPU time.
-INFO: Elaboration virtual memory usage: begin = 192.616 MB, end = 198.56 MB, delta = 5.944 MB
-INFO: Elaboration resident set memory usage: begin = 66.516 MB, end = 73.3 MB, delta = 6.784 MB
-INFO: 	Elaboration peak resident set memory usage = 2282.07 MB
+INFO: Elaboration took 0.0425183 seconds.
+INFO: 	Elaboration took 0.04 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 192.612 MB, end = 198.692 MB, delta = 6.08 MB
+INFO: Elaboration resident set memory usage: begin = 66.332 MB, end = 73.116 MB, delta = 6.784 MB
+INFO: 	Elaboration peak resident set memory usage = 3073.79 MB
 INFO: ***** Ending Elaboration ... *****
 [EFX-0000 INFO] ... Setting Synthesis Option: mode=speed
 INFO: ***** Beginning Reading Mapping Library ... *****
@@ -104,6 +106,24 @@ INFO: ***** Beginning Reading Mapping Library ... *****
 /home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(57): INFO: compiling module 'EFX_LUT4' (VERI-1018)
 /home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(65): INFO: compiling module 'EFX_MULT' (VERI-1018)
 /home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(100): INFO: compiling module 'EFX_DSP48' (VERI-1018)
+/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(156): INFO: compiling module 'EFX_DSP24' (VERI-1018)
+/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(209): INFO: compiling module 'EFX_DSP12' (VERI-1018)
+/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(322): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(394): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(499): INFO: compiling module 'RAMB5' (VERI-1018)
+/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(561): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(653): INFO: compiling module 'EFX_RAM10' (VERI-1018)
+/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(754): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
+/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(884): INFO: compiling module 'EFX_SRL8' (VERI-1018)
+INFO: Reading Mapping Library took 0.0123774 seconds.
+INFO: 	Reading Mapping Library took 0.01 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 199.592 MB, end = 199.592 MB, delta = 0 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 74.14 MB, end = 74.14 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 3073.79 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v:719)
 [EFX-0256 WARNING] The primary output port 'led' wire 'led' is not driven.
 [EFX-0200 WARNING] Removing redundant signal : bit_xor. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v:312)
 [EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v:313)
@@ -129,116 +149,46 @@ INFO: ***** Beginning Reading Mapping Library ... *****
 [EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v:89)
 [EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v:89)
 [EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v:89)
-/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(156): INFO: compiling module 'EFX_DSP24' (VERI-1018)
-/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(209): INFO: compiling module 'EFX_DSP12' (VERI-1018)
-/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
-/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(322): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
-/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(394): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
-/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(499): INFO: compiling module 'RAMB5' (VERI-1018)
-/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(561): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
-/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(653): INFO: compiling module 'EFX_RAM10' (VERI-1018)
-/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(754): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
-/home/tejas/Downloads/efinity/2023.2/sim_models/maplib/efinix_maplib.v(884): INFO: compiling module 'EFX_SRL8' (VERI-1018)
-INFO: Reading Mapping Library took 0.00850931 seconds.
-INFO: 	Reading Mapping Library took 0.01 seconds (approximately) in total CPU time.
-INFO: Reading Mapping Library virtual memory usage: begin = 199.484 MB, end = 199.484 MB, delta = 0 MB
-INFO: Reading Mapping Library resident set memory usage: begin = 74.324 MB, end = 74.324 MB, delta = 0 MB
-INFO: 	Reading Mapping Library peak resident set memory usage = 2282.07 MB
-INFO: ***** Ending Reading Mapping Library ... *****
-[EFX-0000 INFO] ... Pre-synthesis checks begin
-[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v:719)
 [EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'led_reg'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
 [EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo.a_rst_i'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_phy.v:40)
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[0]=1).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[1]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[2]=1).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[3]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[4]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[5]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[6]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[7]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[8]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[9]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[10]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[11]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[12]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[13]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[14]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[15]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[16]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[17]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[18]=0).
-[EFX-0266 WARNING] Module Instance 'wsctrl' input pin tied to constant (data_depth[19]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[0]=1).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[1]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[2]=1).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[3]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[4]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[5]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[6]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[7]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[8]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[9]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[10]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[11]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[12]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[13]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[14]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[15]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[16]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[17]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[18]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (data_depth[19]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[0]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[1]=1).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[2]=1).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[3]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[4]=1).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[5]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[6]=1).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[7]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[8]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[9]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[10]=0).
-[EFX-0266 WARNING] Module Instance 'wsinterface' input pin tied to constant (num_leds[11]=0).
-[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... NameSpace init begin
-[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Mapping design "ws2812_phy"
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "test_uart_rx" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "test_uart_rx" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "test_uart_rx" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_9387c6d4d1f0474eab9d36a0a0b9e8a2(OUTPUT_REG=0,RAM_MUX_RATIO=1)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_9387c6d4d1f0474eab9d36a0a0b9e8a2(OUTPUT_REG=0,RAM_MUX_RATIO=1)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_9387c6d4d1f0474eab9d36a0a0b9e8a2(OUTPUT_REG=0,RAM_MUX_RATIO=1)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=10)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=10)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=10)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_9387c6d4d1f0474eab9d36a0a0b9e8a2(STAGE=2,WIDTH=10)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_9387c6d4d1f0474eab9d36a0a0b9e8a2(STAGE=2,WIDTH=10)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_9387c6d4d1f0474eab9d36a0a0b9e8a2(STAGE=2,WIDTH=10)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=2)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=2)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=2)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=3)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=3)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=3)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=4)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=4)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=4)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=6)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=6)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=6)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=7)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=7)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=7)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=8)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=8)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=8)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=9)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=9)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=9)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=10)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=10)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9387c6d4d1f0474eab9d36a0a0b9e8a2(WIDTH=10)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_9387c6d4d1f0474eab9d36a0a0b9e8a2(SYNC_CLK=0,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_9387c6d4d1f0474eab9d36a0a0b9e8a2(SYNC_CLK=0,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_9387c6d4d1f0474eab9d36a0a0b9e8a2(SYNC_CLK=0,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_9387c6d4d1f0474eab9d36a0a0b9e8a2_renamed_due_excessive_length_1" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_9387c6d4d1f0474eab9d36a0a0b9e8a2_renamed_due_excessive_length_1" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_9387c6d4d1f0474eab9d36a0a0b9e8a2_renamed_due_excessive_length_1" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "phy_fifo" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "phy_fifo" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "phy_fifo" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_ctrl" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_ctrl" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_ctrl" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_interface" begin
 [EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$g03'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
 [EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$f03'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
@@ -248,48 +198,48 @@ INFO: ***** Ending Reading Mapping Library ... *****
 [EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$b03'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
 [EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$03'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
 [EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg__D$3'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_interface" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_interface" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_phy" begin
-[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 116 flops.
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_phy" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 106 flops.
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_phy" end (Real time : 1s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Flat optimizations begin
-[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Flat synthesis begin
-[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Flat optimizations begin
-[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Check and break combinational loops begin
-[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Sequential Optimization begin
-[EFX-0000 INFO] ... Clock Network 'clk' with 297 loads will be considered for sequential optimization.
-[EFX-0000 INFO] ... Sequential Optimization deduced 670 equivalent points.
-[EFX-0000 INFO] ... Sequential Optimization end (Real time : 4s CPU user time : 6s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Clock Network 'clk' with 304 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Sequential Optimization deduced 377 equivalent points.
+[EFX-0000 INFO] ... Sequential Optimization end (Real time : 3s CPU user time : 8s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... SOP modeling begin
-[EFX-0000 INFO] ... SOP modeling end (Real time : 0s CPU user time : 6s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s CPU user time : 8s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... LUT mapping begin
-[EFX-0000 INFO] ... LS, strategy: 3, nd: 399, ed: 1259, lv: 4, pw: 737.57
-[EFX-0000 INFO] ... LUT mapping end (Real time : 1s CPU user time : 7s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 528, ed: 1717, lv: 5, pw: 927.30
+[EFX-0000 INFO] ... LUT mapping end (Real time : 2s CPU user time : 10s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
-[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 7s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 10s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Postmap Retiming Optimization begin
-[EFX-0000 INFO] ... Clock Network 'clk' with 248 loads will be considered for retiming optimization.
-[EFX-0000 INFO] ... Performed 2 retime moves.
-[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 3s CPU user time : 10s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Clock Network 'clk' with 303 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Performed 1 retime moves.
+[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 3s CPU user time : 13s CPU sys time : 0s MEM : 3073788KB)
 [EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
-[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s CPU user time : 10s CPU sys time : 0s MEM : 2282068KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s CPU user time : 13s CPU sys time : 0s MEM : 3073788KB)
 INFO: ***** Beginning VDB Netlist Checker ... *****
-INFO: VDB Netlist Checker took 0.0101375 seconds.
+INFO: VDB Netlist Checker took 0.0112339 seconds.
 INFO: 	VDB Netlist Checker took 0.01 seconds (approximately) in total CPU time.
-INFO: VDB Netlist Checker virtual memory usage: begin = 244.3 MB, end = 244.3 MB, delta = 0 MB
-INFO: VDB Netlist Checker resident set memory usage: begin = 124.48 MB, end = 124.48 MB, delta = 0 MB
-INFO: 	VDB Netlist Checker peak resident set memory usage = 2282.07 MB
+INFO: VDB Netlist Checker virtual memory usage: begin = 244.296 MB, end = 244.296 MB, delta = 0 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 124.32 MB, end = 124.32 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 3073.79 MB
 INFO: ***** Ending VDB Netlist Checker ... *****
 -- Writing netlist 'ws2812_phy' to Verilog file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.map.v' (VDB-1030)
 [EFX-0000 INFO] Resource Summary 
 [EFX-0000 INFO] =============================== 
 [EFX-0000 INFO] EFX_ADD         : 	30
-[EFX-0000 INFO] EFX_LUT4        : 	400
-[EFX-0000 INFO] EFX_FF          : 	251
+[EFX-0000 INFO] EFX_LUT4        : 	513
+[EFX-0000 INFO] EFX_FF          : 	298
 [EFX-0000 INFO] EFX_RAM_5K      : 	25
 [EFX-0000 INFO] EFX_GBUFCE      : 	1
 [EFX-0000 INFO] =============================== 

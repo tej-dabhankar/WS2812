@@ -1,0 +1,47 @@
+[dumpfile] "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/la0_waveform.vcd"
+[dumpfile_mtime] "Sat Jun 15 12:14:11 2024"
+[dumpfile_size] 2636
+[savefile] "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/la0_waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 c 512 1536 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 126
+[sst_expanded] 1
+@22
+top.w_data_depth[19:0]
+top.i_rx_serial
+top.w_rgb_data[23:0]
+top.w_rx_dv
+top.clk
+top.w_fifo_rd_en
+top.w_f_empty
+top.led
+top.data
+top.w_fifo_rd_data[7:0]
+top.w_rx_byte[7:0]
+top.w_address[19:0]
+top.w_write
+top.\wsctrl/address[10:0]
+top.\wsctrl/backward[11:0]
+top.\wsctrl/clk
+top.\wsctrl/data_condition[7:0]
+top.\wsctrl/data_depth[19:0]
+top.\wsctrl/fifo_read_data[7:0]
+top.\wsctrl/fifo_read_en
+top.\wsctrl/forward[11:0]
+top.\wsctrl/f_empty
+top.\wsctrl/length[7:0]
+top.\wsctrl/num_leds[11:0]
+top.\wsctrl/post_wait_state[3:0]
+top.\wsctrl/rgb_data[23:0]
+top.\wsctrl/r_address[19:0]
+top.\wsctrl/r_data_depth[19:0]
+top.\wsctrl/r_fifo_read_en
+top.\wsctrl/r_reset
+top.\wsctrl/r_rgb_data[23:0]
+top.\wsctrl/r_rst
+top.\wsctrl/r_write
+top.\wsctrl/state[3:0]
+top.\wsctrl/write
+top.w_num_leds[11:0]

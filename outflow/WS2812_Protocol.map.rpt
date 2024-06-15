@@ -1,6 +1,6 @@
 Efinity Synthesis report for project WS2812_Protocol
 Version: 2023.2.307
-Generated at: Jun 14, 2024 12:42:43
+Generated at: Jun 15, 2024 17:46:37
 Copyright (C) 2013 - 2023  All rights reserved.
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
@@ -26,73 +26,73 @@ Top-level Entity Name : ws2812_phy
 "MEM|OPT-0656" : Optimizing into logic zero initialized read-only memory block 'led_reg__D$3'. (/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_interface.v:28)
 
 ### ### EFX_FF CE enables (begin) ### ### ###
-Total number of enable signals: 22
-Total number of FFs with enable signals: 92
+Total number of enable signals: 31
+Total number of FFs with enable signals: 134
 CE signal <uartrx/n509>, number of controlling flip flops: 1
 CE signal <ceg_net63>, number of controlling flip flops: 11
-CE signal <ceg_net352>, number of controlling flip flops: 1
-CE signal <ceg_net230>, number of controlling flip flops: 3
+CE signal <ceg_net320>, number of controlling flip flops: 1
+CE signal <ceg_net207>, number of controlling flip flops: 3
 CE signal <uartrx/n485>, number of controlling flip flops: 1
 CE signal <uartrx/n487>, number of controlling flip flops: 1
 CE signal <uartrx/n489>, number of controlling flip flops: 1
-CE signal <uartrx/n491>, number of controlling flip flops: 1
-CE signal <uartrx/n500>, number of controlling flip flops: 1
+CE signal <uartrx/n499>, number of controlling flip flops: 1
+CE signal <uartrx/n502>, number of controlling flip flops: 1
 CE signal <uartrx/n503>, number of controlling flip flops: 1
 CE signal <uartrx/n506>, number of controlling flip flops: 1
 CE signal <ws_wr_fifo/u_efx_fifo_top/wr_en_int>, number of controlling flip flops: 10
 CE signal <ws_wr_fifo/u_efx_fifo_top/rd_en_int>, number of controlling flip flops: 10
-CE signal <wsctrl/n1252>, number of controlling flip flops: 3
-CE signal <ceg_net392>, number of controlling flip flops: 3
-CE signal <ceg_net389>, number of controlling flip flops: 8
-CE signal <ceg_net317>, number of controlling flip flops: 8
-CE signal <ceg_net246>, number of controlling flip flops: 1
-CE signal <ceg_net85>, number of controlling flip flops: 7
-CE signal <ceg_net341>, number of controlling flip flops: 8
-CE signal <ceg_net350>, number of controlling flip flops: 8
-CE signal <~wsinterface/select_52/Select_0/n4>, number of controlling flip flops: 3
+CE signal <wsctrl/n1411>, number of controlling flip flops: 11
+CE signal <wsctrl/n986>, number of controlling flip flops: 8
+CE signal <ceg_net313>, number of controlling flip flops: 4
+CE signal <wsctrl/n1472>, number of controlling flip flops: 8
+CE signal <wsctrl/n1486>, number of controlling flip flops: 8
+CE signal <ceg_net221>, number of controlling flip flops: 1
+CE signal <ceg_net83>, number of controlling flip flops: 7
+CE signal <ceg_net287>, number of controlling flip flops: 8
+CE signal <ceg_net303>, number of controlling flip flops: 8
+CE signal <~wsinterface/select_52/Select_0/n4>, number of controlling flip flops: 20
+CE signal <wsinterface/equal_43/n7>, number of controlling flip flops: 1
+CE signal <wsinterface/n2115>, number of controlling flip flops: 1
+CE signal <wsinterface/n2443>, number of controlling flip flops: 1
+CE signal <wsinterface/n2033>, number of controlling flip flops: 1
+CE signal <wsinterface/n1951>, number of controlling flip flops: 1
+CE signal <wsinterface/n2361>, number of controlling flip flops: 1
+CE signal <wsinterface/n2279>, number of controlling flip flops: 1
+CE signal <wsinterface/n2197>, number of controlling flip flops: 1
 ### ### EFX_FF CE enables (end) ### ### ###
 
 ### ### EFX_FF SR set/reset (begin) ### ### ###
 Total number of set/reset signals: 4
 Total number of FFs with set/reset signals: 63
 SR signal <uartrx/r_SM_Main[2]>, number of controlling flip flops: 2
-SR signal <uartrx/n453>, number of controlling flip flops: 1
+SR signal <uartrx/n481>, number of controlling flip flops: 1
 SR signal <ws_wr_fifo/u_efx_fifo_top/genblk2.wr_rst[1]>, number of controlling flip flops: 30
 SR signal <ws_wr_fifo/u_efx_fifo_top/genblk2.rd_rst[1]>, number of controlling flip flops: 30
 ### ### EFX_FF SR set/reset (end) ### ### ###
 
 ### ### Sequential Elements Trimming Report (begin) ### ### ### 
 FF|OPT : Flip-flop optimization by equivalence checking
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/raddr_cntr[9]~FF_frt_4
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i10
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v (146)" removed instance : wsctrl/dff_35/i11
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v (146)" representative instance : wsctrl/dff_35/i12
 FF|OPT : Flip-flop optimization by equivalence checking
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[0]~FF_frt_13
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i1
-FF|OPT : Flip-flop optimization by equivalence checking
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[1]~FF_frt_12
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i2
-FF|OPT : Flip-flop optimization by equivalence checking
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[2]~FF_frt_11
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i3
-FF|OPT : Flip-flop optimization by equivalence checking
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[3]~FF_frt_10
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i4
-FF|OPT : Flip-flop optimization by equivalence checking
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[4]~FF_frt_9
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i5
-FF|OPT : Flip-flop optimization by equivalence checking
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[5]~FF_frt_8
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i6
-FF|OPT : Flip-flop optimization by equivalence checking
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[6]~FF_frt_7
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i7
-FF|OPT : Flip-flop optimization by equivalence checking
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[7]~FF_frt_6
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i8
-FF|OPT : Flip-flop optimization by equivalence checking
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" removed instance : ws_wr_fifo/u_efx_fifo_top/raddr[8]~FF_frt_5
-@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/ip/phy_fifo/phy_fifo.v (1298)" representative instance : ws_wr_fifo/u_efx_fifo_top/xefx_fifo_ctl/dff_49/i9
-FF Output: wsctrl/post_wait_state[3](=0)
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v (146)" removed instance : wsctrl/dff_35/i10
+@ "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/Design/ws2812_ctrl.v (146)" representative instance : wsctrl/dff_35/i12
+FF Output: w_data_depth[12](=0)
+FF Output: w_data_depth[13](=0)
+FF Output: w_data_depth[14](=0)
+FF Output: w_data_depth[15](=0)
+FF Output: w_data_depth[16](=0)
+FF Output: w_data_depth[17](=0)
+FF Output: w_data_depth[18](=0)
+FF Output: w_data_depth[19](=0)
+FF instance: wsctrl/length[0]~FF(unreachable)
+FF instance: wsctrl/length[1]~FF(unreachable)
+FF instance: wsctrl/length[2]~FF(unreachable)
+FF instance: wsctrl/length[3]~FF(unreachable)
+FF instance: wsctrl/length[4]~FF(unreachable)
+FF instance: wsctrl/length[5]~FF(unreachable)
+FF instance: wsctrl/length[6]~FF(unreachable)
+FF instance: wsctrl/length[7]~FF(unreachable)
 ### ### Sequential Elements Trimming Report (end) ### ### ### 
 
 ### ### Module Resource Usage Distribution Estimates (begin) ### ###
@@ -101,14 +101,14 @@ FF Output: wsctrl/post_wait_state[3](=0)
 
 Module                                                               FFs        ADDs        LUTs      RAMs DSP/MULTs
 ------------------------------------------------------------         ---        ----        ----      ---- ---------
-ws2812_phy:ws2812_phy                                             251(0)       30(0)      400(0)     25(0)      0(0)
- +uartrx:test_uart_rx                                             28(28)        0(0)      63(63)      0(0)      0(0)
- +ws_wr_fifo:phy_fifo                                             104(0)       30(0)       50(0)      1(0)      0(0)
-  +u_efx_fifo_top:efx_fifo_top_9387c6d4d1f0474eab9d36a0a0...      104(4)       30(0)       50(0)      1(0)      0(0)
+ws2812_phy:ws2812_phy                                             298(0)       30(0)      513(0)     25(0)      0(0)
+ +uartrx:test_uart_rx                                             28(28)        0(0)      61(61)      0(0)      0(0)
+ +ws_wr_fifo:phy_fifo                                             104(0)       30(0)       49(0)      1(0)      0(0)
+  +u_efx_fifo_top:efx_fifo_top_9387c6d4d1f0474eab9d36a0a0...      104(4)       30(0)       49(0)      1(0)      0(0)
    +xefx_fifo_ram:efx_fifo_ram_9387c6d4d1f0474eab9d36a0a0...        0(0)        0(0)        0(0)      1(1)      0(0)
-   +xefx_fifo_ctl:efx_fifo_ctl_9387c6d4d1f0474eab9d36a0a0...     100(60)      30(30)      50(12)      0(0)      0(0)
+   +xefx_fifo_ctl:efx_fifo_ctl_9387c6d4d1f0474eab9d36a0a0...     100(60)      30(30)      49(13)      0(0)      0(0)
     +genblk7.xrd2wr_bin2gray:efx_fifo_bin2gray_9387c6d4d1...        0(0)        0(0)        9(9)      0(0)      0(0)
-    +genblk7.xrd2wr_addr_sync:efx_fifo_datasync_9387c6d4d...      20(20)        0(0)        1(1)      0(0)      0(0)
+    +genblk7.xrd2wr_addr_sync:efx_fifo_datasync_9387c6d4d...      20(20)        0(0)        0(0)      0(0)      0(0)
     +genblk7.xrd2wr_gray2bin:efx_fifo_gray2bin_9387c6d4d1...        0(0)        0(0)        9(1)      0(0)      0(0)
      +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6...        0(0)        0(0)        8(1)      0(0)      0(0)
       +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c...        0(0)        0(0)        7(1)      0(0)      0(0)
@@ -119,7 +119,7 @@ ws2812_phy:ws2812_phy                                             251(0)       3
            +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_...        0(0)        0(0)        2(1)      0(0)      0(0)
             +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin...        0(0)        0(0)        1(1)      0(0)      0(0)
     +genblk7.wr2rd_bin2gray:efx_fifo_bin2gray_9387c6d4d1f...        0(0)        0(0)        9(9)      0(0)      0(0)
-    +genblk7.wr2rd_addr_sync:efx_fifo_datasync_9387c6d4d1...      20(20)        0(0)        1(1)      0(0)      0(0)
+    +genblk7.wr2rd_addr_sync:efx_fifo_datasync_9387c6d4d1...      20(20)        0(0)        0(0)      0(0)      0(0)
     +genblk7.wr2rd_gray2bin:efx_fifo_gray2bin_9387c6d4d1f...        0(0)        0(0)        9(1)      0(0)      0(0)
      +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c6...        0(0)        0(0)        8(1)      0(0)      0(0)
       +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9387c...        0(0)        0(0)        7(1)      0(0)      0(0)
@@ -129,8 +129,8 @@ ws2812_phy:ws2812_phy                                             251(0)       3
           +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9...        0(0)        0(0)        3(1)      0(0)      0(0)
            +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_...        0(0)        0(0)        2(1)      0(0)      0(0)
             +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin...        0(0)        0(0)        1(1)      0(0)      0(0)
- +wsctrl:ws2812_ctrl                                              46(46)        0(0)      53(53)      0(0)      0(0)
- +wsinterface:ws2812_interface                                    73(73)        0(0)    234(234)    24(24)      0(0)
+ +wsctrl:ws2812_ctrl                                              63(63)        0(0)      90(90)      0(0)      0(0)
+ +wsinterface:ws2812_interface                                  103(103)        0(0)    313(313)    24(24)      0(0)
 
 ### ### Module Resource Usage Distribution Estimates (end) ### ###
 
@@ -139,7 +139,7 @@ ws2812_phy:ws2812_phy                                             251(0)       3
 
  Clock     Flip-Flops   Memory Ports    Multipliers
  -----     ----------   ------------    -----------
-   clk            251             50              0
+   clk            298             50              0
 
 ### ### Clock Load Distribution Report (end) ### ###
 
@@ -171,14 +171,14 @@ INPUT  PORTS    : 	2
 OUTPUT PORTS    : 	2
 
 EFX_ADD         : 	30
-EFX_LUT4        : 	400
-   1-2  Inputs  : 	118
-   3    Inputs  : 	103
-   4    Inputs  : 	179
-EFX_FF          : 	251
+EFX_LUT4        : 	513
+   1-2  Inputs  : 	133
+   3    Inputs  : 	122
+   4    Inputs  : 	258
+EFX_FF          : 	298
 EFX_RAM_5K      : 	25
 EFX_GBUFCE      : 	1
 ### ### Resource Summary (end) ### ### ###
 
-Plain synthesis (without verilog dump and post-map checks) time : 8s
-Elapsed synthesis time : 8s
+Plain synthesis (without verilog dump and post-map checks) time : 9s
+Elapsed synthesis time : 9s

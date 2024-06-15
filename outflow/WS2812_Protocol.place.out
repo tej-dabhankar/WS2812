@@ -15,11 +15,11 @@ Running Placement and Routing for Family "Trion", Device "T120F324" ...
 ***** Beginning stage netlist pre-processing ... *****
 Successfully Read in Verific binary Netlist dump file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.dbg.vdb".
 ***** Beginning VDB Netlist Checker ... *****
-VDB Netlist Checker took 0.0568253 seconds.
-	VDB Netlist Checker took 0.05 seconds (approximately) in total CPU time.
-VDB Netlist Checker virtual memory usage: begin = 199.968 MB, end = 199.968 MB, delta = 0 MB
-VDB Netlist Checker resident set memory usage: begin = 53.904 MB, end = 54.032 MB, delta = 0.128 MB
-	VDB Netlist Checker peak resident set memory usage = 2283.24 MB
+VDB Netlist Checker took 0.0969294 seconds.
+	VDB Netlist Checker took 0.1 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 201.548 MB, end = 201.548 MB, delta = 0 MB
+VDB Netlist Checker resident set memory usage: begin = 55.304 MB, end = 55.432 MB, delta = 0.128 MB
+	VDB Netlist Checker peak resident set memory usage = 64.864 MB
 ***** Ending VDB Netlist Checker ... *****
 Reading core interface constraints from '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.csv'.
 Successfully processed interface constraints file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.csv".
@@ -38,44 +38,51 @@ Swept away 0 nets and 3 blocks in total.
 Removed 0 LUT buffers.
 Sweeped away 3 nodes.
 Successfully created VPR logical netlist from Verific binary DataBase file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.dbg.vdb".
-Netlist pre-processing took 0.125806 seconds.
-	Netlist pre-processing took 0.12 seconds (approximately) in total CPU time.
-Netlist pre-processing virtual memory usage: begin = 199.968 MB, end = 203.268 MB, delta = 3.3 MB
-Netlist pre-processing resident set memory usage: begin = 53.264 MB, end = 57.36 MB, delta = 4.096 MB
-	Netlist pre-processing peak resident set memory usage = 2283.24 MB
+Netlist pre-processing took 0.231061 seconds.
+	Netlist pre-processing took 0.23 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 199.964 MB, end = 220.4 MB, delta = 20.436 MB
+Netlist pre-processing resident set memory usage: begin = 53.256 MB, end = 74.376 MB, delta = 21.12 MB
+	Netlist pre-processing peak resident set memory usage = 74.376 MB
 ***** Ending stage netlist pre-processing *****
 
 ***** Beginning stage pre-packing ... *****
 ***** Ending stage pre-packing *****
 
 ***** Beginning stage packing ... *****
-Generate proto netlist for file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.net_proto" took 0.00594 seconds
+Generate proto netlist for file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.net_proto" took 0.009157 seconds
 Creating IO constraints file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.io_place'
-Packing took 0.0230468 seconds.
-	Packing took 0.01 seconds (approximately) in total CPU time.
-Packing virtual memory usage: begin = 210.744 MB, end = 215.072 MB, delta = 4.328 MB
-Packing resident set memory usage: begin = 64.784 MB, end = 69.136 MB, delta = 4.352 MB
-	Packing peak resident set memory usage = 2283.24 MB
+Packing took 0.0368558 seconds.
+	Packing took 0.03 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 220.4 MB, end = 226.204 MB, delta = 5.804 MB
+Packing resident set memory usage: begin = 74.504 MB, end = 80.52 MB, delta = 6.016 MB
+	Packing peak resident set memory usage = 80.52 MB
 ***** Ending stage packing *****
 
 ***** Beginning stage packed netlist loading ... *****
 Read proto netlist file /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.net_proto
-Read proto netlist for file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.net_proto" took 0.001101 seconds
-Setup net and block data structure took 0.117522 seconds
-Packed netlist loading took 0.619046 seconds.
-	Packed netlist loading took 0.7 seconds (approximately) in total CPU time.
-Packed netlist loading virtual memory usage: begin = 215.072 MB, end = 689.604 MB, delta = 474.532 MB
-Packed netlist loading resident set memory usage: begin = 69.136 MB, end = 126.16 MB, delta = 57.024 MB
-	Packed netlist loading peak resident set memory usage = 2283.24 MB
+Read proto netlist for file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.net_proto" took 0.001927 seconds
+Setup net and block data structure took 0.221156 seconds
+Packed netlist loading took 2.48427 seconds.
+	Packed netlist loading took 2.91 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 226.204 MB, end = 737.932 MB, delta = 511.728 MB
+Packed netlist loading resident set memory usage: begin = 80.52 MB, end = 181.072 MB, delta = 100.552 MB
+	Packed netlist loading peak resident set memory usage = 183.672 MB
 ***** Ending stage packed netlist loading *****
 
 ***** Beginning stage pre-placement ... *****
 
 ***** Ending stage pre-placement *****
 
+WARNING(1): No ports matched 'Clk'
+WARNING(2): [SDC /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc:1] No valid object(s) found for ''
+WARNING(3): [SDC /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc:1] No valid pin(s) found for clock
+WARNING(4): [SDC /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc:1] Unable to run 'create_clock' constraint due to warnings found
 
-No SDC file found.  Using default timing constraint of 1 ns.
-NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+SDC file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc' blank or does not contain valid constraint or not found.
+Using default timing constraint of 1 ns.
+
+SDC file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc' parsed successfully.
+3 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
 
 ***** Beginning stage initial placement ... *****
 Reading core interface constraints from '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.csv'.
@@ -85,8 +92,8 @@ Writing IO placement constraints to '/home/tejas/Documents/Vicharak/FPGA_Impleme
 Reading placement constraints from '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.io'.
 
 Reading placement constraints from '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.io_place'.
-WARNING(1): Clock driver jtag_inst1_TCK should use the dedicated clock pad.
-WARNING(2): Clock input pad, clk, of net, clk, drives both clock buffer and logic. Expect extra clock skew.
+WARNING(5): Clock driver jtag_inst1_TCK should use the dedicated clock pad.
+WARNING(6): Clock input pad, clk, of net, clk, drives both clock buffer and logic. Expect extra clock skew.
 The driver, jtag_inst1_RESET, of control net, jtag_inst1_RESET, should be placed at a dedicated control pad location.
 ***** Ending stage initial placement *****
 
@@ -121,103 +128,124 @@ Starting Global Placer with 6 threads ...
  ----------     -------  --------------     -------
   Iteration       WHPWL Worst Slack (ps) Convergence
  ----------     -------  --------------     -------
-          1     7332731           -5517         1.6%
-          2     6803722           -5262         2.7%
-          3     6453626           -5598         3.4%
-          4     5791340           -5935         3.7%
-          5     2389342           -6149         5.3%
-          6      920703           -6167        10.9%
-          7      423988           -7180        22.7%
-          8      243513           -8063        32.3%
-          9      196444           -8937        39.0%
-         10      187562           -9635        46.4%
-         11      189113           -8731        49.3%
-         12      164756           -8986        49.3%
-         13      184865           -8758        53.8%
-         14      175268           -8845        53.8%
-         15      177674           -8847        54.6%
-         16      173744           -8973        54.7%
-         17      172738           -8563        57.6%
-         18      176340           -8915        57.6%
-         19      175931           -9106        57.6%
-         20      173450           -8960        59.3%
-         21      167470           -8902        59.3%
-         22      169469           -8914        60.9%
-         23      167212           -8634        60.9%
-         24      171218           -9376        61.6%
-         25      163674           -8982        61.6%
-         26      169107           -9570        65.5%
-         27      160666           -9373        66.1%
-         28      168392           -9414        69.4%
-         29      161028           -9584        69.4%
-         30      169535           -9524        71.6%
-         31      156247           -9416        71.6%
-         32      168415           -9836        74.1%
-         33      156236           -9173        74.1%
-         34      171350           -9355        74.2%
-         35      152456           -9550        74.2%
-         36      170987           -9332        76.3%
-         37      154355           -9524        76.3%
-         38      170721           -9671        77.8%
-         39      155392           -9770        77.8%
-         40      171559           -9655        79.5%
-         41      157458           -9821        79.5%
-         42      170884          -10015        81.2%
-         43      151532           -9728        81.2%
-         44      166978           -9598        84.1%
-         45      150170           -9916        84.1%
+          1    12613918           -5598         0.8%
+          2    11287538           -5598         1.3%
+          3    10987789           -5262         1.7%
+          4     9675393           -5729         2.2%
+          5     4371184           -6176         4.1%
+          6     1709372           -7260         9.0%
+          7      760225           -7602        18.1%
+          8      490281           -8898        27.7%
+          9      357011           -9047        37.2%
+         10      369330           -9315        46.1%
+         11      359500           -8942        47.1%
+         12      344184           -9276        51.7%
+         13      368496           -9634        56.9%
+         14      356736           -9899        57.4%
+         15      330122          -10054        57.4%
+         16      333207           -9994        61.8%
+         17      336774           -9347        61.8%
+         18      332754           -9818        62.5%
+         19      326030           -9791        63.8%
+         20      330026          -10200        66.5%
+         21      332467          -10194        66.5%
+         22      330814          -10194        68.2%
+         23      315034          -10194        68.2%
+         24      329775          -10167        71.4%
+         25      307687           -9783        71.4%
+         26      328548          -10215        72.7%
+         27      316387           -9948        72.7%
+         28      316088          -10227        74.7%
+         29      312691          -10110        74.7%
+         30      306781          -10117        76.0%
+         31      306276          -10060        76.0%
+         32      310620           -9789        78.7%
+         33      318854           -9857        78.7%
+         34      304616          -10089        79.5%
+         35      321859           -9980        80.0%
+         36      301415           -9623        80.0%
+         37      318320           -9682        81.6%
+         38      302512           -9686        81.6%
+         39      317893          -10172        81.7%
+         40      301729           -9695        81.7%
+         41      317011           -9667        82.7%
+         42      296653           -9441        82.7%
+         43      312096          -10060        84.7%
+         44      300327           -9863        84.7%
+         45      312204           -9685        85.1%
+         46      298183          -10120        85.9%
+         47      307927          -10060        87.2%
+         48      302501           -9925        88.2%
+         49      303186          -10069        88.2%
+         50      295828           -9871        90.4%
+         51      308889          -10225        90.4%
+         52      297574           -9975        90.6%
+         53      306664          -10211        91.1%
+         54      298977           -9973        91.9%
+         55      300552           -9936        92.3%
+         56      295502          -10014        93.5%
+         57      300032          -10295        94.6%
+         58      290808          -10158        94.6%
+         59      292488          -10263        95.9%
+         60      293789          -10244        97.3%
+         61      294195          -10442        97.3%
+         62      295566          -10810        98.3%
+         63      298334          -10537        98.7%
+         64      296099          -10817        98.8%
+         65      295606          -10979        99.1%
+         66      298015          -11048        99.4%
 Starting Annealer
 
  ----------     -------  --------------     -------
   Iteration       WHPWL  Delay Max (ps)     R Limit
  ----------     -------  --------------     -------
-          0      156236           13102        30.0
-          1      139360           11939        30.0
-          2      107491           12040        29.8
-          3       96752           11414        29.2
-          4       89496           11146        28.4
-          5       87033           11025        27.5
-          6       84812           11088        26.4
-          7       82118           10758        25.2
-          8       80589           10758        24.1
-          9       80920           10552        22.8
-         10       80497           10169        21.6
-         11       79614           10476        20.5
-         12       79319           10196        19.4
-         13       79104           10162        18.2
-         14       78394           10162        17.1
-         15       77220           10201        16.0
-         16       76580           10201        15.0
-         17       76030           10201        14.0
-         18       75289           10066        13.1
-         19       74057           10066        12.2
-         20       72561           10063        11.4
-         21       71667           10322        10.6
-         22       70822           10310         9.8
-         23       70119           10310         9.1
-         24       69339           10366         8.5
-         25       68134           10561         7.9
-         26       67757           10561         7.3
-         27       67094           10561         6.8
-         28       66222           10762         6.2
-         29       65612           10408         5.8
-         30       65037           10407         5.3
-         31       64087           10015         4.9
-         32       62285           10274         4.4
+          0      293789           12484        30.0
+          1      274153           11685        30.0
+          2      223026           11854        30.0
+          3      200633           11335        29.2
+          4      187235           11092        28.2
+          5      181686           11267        26.9
+          6      177575           11042        25.6
+          7      173972           10734        24.1
+          8      172114           10723        22.7
+          9      169369           10695        21.2
+         10      167943           10536        19.8
+         11      168376           10489        18.4
+         12      167981           10503        17.1
+         13      166409           10658        15.9
+         14      164964           10515        14.8
+         15      163329           10445        13.7
+         16      161693           10416        12.6
+         17      158992            9976        11.7
+         18      156867            9811        10.8
+         19      155688            9908        10.0
+         20      154481           10413         9.2
+         21      153744            9962         8.5
+         22      152509            9962         7.9
+         23      150158            9962         7.2
+         24      147878            9682         6.7
+         25      147142            9676         6.1
+         26      146099            9679         5.7
+         27      145126            9690         5.2
+         28      143640            9635         4.8
+         29      142458            9639         4.4
+         30      140801            9497         4.1
+         31      140202            9534         3.7
+         32      137858            9641         3.3
 Generate /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol_after_qp.qdelay
-Placement successful: 4216 cells are placed
-Peak congestion smeared over 1/4 of the chip is 0.206998 at 0,0
-Congestion-weighted HPWL per net: 10.1072
+Placement successful: 7074 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.287 at 0,17
+Congestion-weighted HPWL per net: 14.9327
 
 Reading placement constraints from '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.qplace'.
-Finished Realigning Types (866 blocks needed type change)
+Finished Realigning Types (1250 blocks needed type change)
 
 Completed placement consistency check successfully.
 Successfully created FPGA place file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.place'
-Placement took 8.634 seconds.
-	Placement took 17.35 seconds (approximately) in total CPU time.
-Placement virtual memory usage: begin = 706.356 MB, end = 1671.42 MB, delta = 965.06 MB
-Placement resident set memory usage: begin = 143.312 MB, end = 675.1 MB, delta = 531.788 MB
-	Placement peak resident set memory usage = 2283.24 MB
+Placement took 14.0154 seconds.
+	Placement took 31.87 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 763.148 MB, end = 1805.69 MB, delta = 1042.54 MB
+Placement resident set memory usage: begin = 206.8 MB, end = 804.212 MB, delta = 597.412 MB
+	Placement peak resident set memory usage = 804.212 MB
 ***** Ending stage placement *****
 

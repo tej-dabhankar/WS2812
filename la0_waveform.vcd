@@ -1,0 +1,211 @@
+#0 $dumpon
+$date today $end
+$timescale 1 ns $end
+$scope module top $end
+$var wire 20 0 w_data_depth $end
+$var wire 1 1 i_rx_serial $end
+$var wire 24 2 w_rgb_data $end
+$var wire 1 3 w_rx_dv $end
+$var wire 1 4 clk $end
+$var wire 1 5 w_fifo_rd_en $end
+$var wire 1 6 w_f_empty $end
+$var wire 1 7 led $end
+$var wire 1 8 data $end
+$var wire 8 9 w_fifo_rd_data $end
+$var wire 8 a w_rx_byte $end
+$var wire 20 b w_address $end
+$var wire 1 c w_write $end
+$var wire 11 d wsctrl/address $end
+$var wire 12 e wsctrl/backward $end
+$var wire 1 f wsctrl/clk $end
+$var wire 8 10 wsctrl/data_condition $end
+$var wire 20 11 wsctrl/data_depth $end
+$var wire 8 12 wsctrl/fifo_read_data $end
+$var wire 1 13 wsctrl/fifo_read_en $end
+$var wire 12 14 wsctrl/forward $end
+$var wire 1 15 wsctrl/f_empty $end
+$var wire 8 16 wsctrl/length $end
+$var wire 12 17 wsctrl/num_leds $end
+$var wire 4 18 wsctrl/post_wait_state $end
+$var wire 24 19 wsctrl/rgb_data $end
+$var wire 20 1a wsctrl/r_address $end
+$var wire 20 1b wsctrl/r_data_depth $end
+$var wire 1 1c wsctrl/r_fifo_read_en $end
+$var wire 1 1d wsctrl/r_reset $end
+$var wire 24 1e wsctrl/r_rgb_data $end
+$var wire 1 1f wsctrl/r_rst $end
+$var wire 1 20 wsctrl/r_write $end
+$var wire 4 21 wsctrl/state $end
+$var wire 1 22 wsctrl/write $end
+$var wire 12 23 w_num_leds $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b00000000000000000000 0
+01
+b000000000000000000000000 2
+03
+04
+05
+16
+17
+08
+b00000000 9
+b00000000 a
+b00000000000000000000 b
+0c
+b00000000000 d
+b111111111111 e
+0f
+b00000000 10
+b00000000000000000000 11
+b00000000 12
+013
+b000000000001 14
+115
+b00000000 16
+b000000000000 17
+b0100 18
+b000000000000000000000000 19
+b00000000000000000000 1a
+b00000000000000000000 1b
+01c
+01d
+b000000000000000000000000 1e
+01f
+020
+b0001 21
+022
+b000000000000 23
+$end
+#24
+18
+#45
+08
+#87
+18
+#108
+08
+#150
+18
+#171
+08
+#213
+18
+#234
+08
+#276
+18
+#291
+11
+#297
+08
+#339
+18
+#360
+08
+#402
+18
+#423
+08
+#465
+18
+#486
+08
+#505
+13
+b00000101 a
+#506
+03
+b00000000 a
+#510
+06
+015
+#511
+15
+113
+11c
+b0010 21
+#512
+05
+16
+b00000101 9
+b00000101 12
+013
+115
+01c
+b0100 21
+#513
+b00000101 10
+b0101 18
+b0001 21
+#528
+18
+#549
+08
+#591
+18
+#612
+08
+#654
+18
+#675
+08
+#717
+18
+#738
+08
+#780
+18
+#801
+08
+#843
+18
+#864
+08
+#906
+18
+#927
+08
+#969
+18
+#990
+08
+#1023
+b00000000000000000000 0
+11
+b000000000000000000000000 2
+03
+04
+05
+16
+17
+08
+b00000101 9
+b00000000 a
+b00000000000000000000 b
+0c
+b00000000000 d
+b111111111111 e
+0f
+b00000101 10
+b00000000000000000000 11
+b00000101 12
+013
+b000000000001 14
+115
+b00000000 16
+b000000000000 17
+b0101 18
+b000000000000000000000000 19
+b00000000000000000000 1a
+b00000000000000000000 1b
+01c
+01d
+b000000000000000000000000 1e
+01f
+020
+b0001 21
+022
+b000000000000 23

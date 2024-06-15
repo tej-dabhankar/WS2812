@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<efx:tool_report xmlns:efx="http://www.efinixinc.com/tool_report" date="2024-06-14 12:44" project="WS2812_Protocol" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/tool_report tool_report.xsd">
+<efx:tool_report xmlns:efx="http://www.efinixinc.com/tool_report" date="2024-06-15 18:58" project="WS2812_Protocol" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/tool_report tool_report.xsd">
   <efx:group name="Periphery Resource">
     <efx:group_data name="DDR" severity="info" value="0 / 1"/>
     <efx:group_data name="GPIO" severity="info" value="2 / 38"/>

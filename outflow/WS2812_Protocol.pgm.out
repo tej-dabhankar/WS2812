@@ -16,8 +16,8 @@ HEX Generation Options Summary:
 	io_weak_pullup                           = on
 	release_tri_then_reset                   = on
 Finished generating "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.hex"
-Efinity Bitstream Generator took 6.79357 seconds.
-	Efinity Bitstream Generator took 6.21 seconds (approximately) in total CPU time.
-Efinity Bitstream Generator virtual memory usage: begin = 57.024 MB, end = 196.156 MB, delta = 139.132 MB
-Efinity Bitstream Generator resident set memory usage: begin = 7.04 MB, end = 145.796 MB, delta = 138.756 MB
-	Efinity Bitstream Generator peak resident set memory usage = 1560.24 MB
+Efinity Bitstream Generator took 6.42083 seconds.
+	Efinity Bitstream Generator took 6.13 seconds (approximately) in total CPU time.
+Efinity Bitstream Generator virtual memory usage: begin = 57.024 MB, end = 196.148 MB, delta = 139.124 MB
+Efinity Bitstream Generator resident set memory usage: begin = 7.68 MB, end = 146.204 MB, delta = 138.524 MB
+	Efinity Bitstream Generator peak resident set memory usage = 198.648 MB

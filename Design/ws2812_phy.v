@@ -13,8 +13,7 @@ parameter CLKS_PER_BIT      = 435;
 parameter PHY_FIFO_WIDTH    = 8;
 
 
-reg [19:0]  data_depth  = 'd5;
-reg [11:0]  num_leds    = 'd86;
+//reg [11:0]  num_leds    = 'd10;
 
 /* Connecting Wires */
 wire                        w_rx_dv;
@@ -25,7 +24,8 @@ wire [PHY_FIFO_WIDTH-1:0]   w_fifo_rd_data;
 wire                        w_write;
 wire [23:0]                 w_rgb_data;
 wire [19:0]                 w_address;
-
+wire [19:0]                 w_data_depth;
+wire [11:0]                 w_num_leds;
 
 /* Module Instantiations */
 test_uart_rx #(
@@ -52,8 +52,9 @@ ws2812_ctrl wsctrl(
     .f_empty        (w_f_empty),
     .fifo_read_data (w_fifo_rd_data),
     .fifo_read_en   (w_fifo_rd_en),
-    .data_depth     (data_depth),
+    .data_depth     (w_data_depth),
     .write          (w_write),
+    .num_leds       (w_num_leds),
     .rgb_data       (w_rgb_data),
     .address        (w_address)
 );
@@ -61,8 +62,8 @@ ws2812_ctrl wsctrl(
 ws2812_interface wsinterface(
     .clk            (clk),
     .rgb_data       (w_rgb_data),
-    .data_depth     (data_depth),
-    .num_leds       (num_leds),
+    .data_depth     (w_data_depth),
+    .num_leds       (w_num_leds),
     .address        (w_address),
     .write          (w_write),
     .data           (data)

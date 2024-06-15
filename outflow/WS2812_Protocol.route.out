@@ -16,121 +16,134 @@ Running Placement and Routing for Family "Trion", Device "T120F324" ...
 Read ipin pattern from /home/tejas/Downloads/efinity/2023.2/arch/./ipin_oph.xml
 Finished parsing ipin pattern file '/home/tejas/Downloads/efinity/2023.2/arch/./ipin_oph.xdb'.
 Finished parsing switch_block file '/home/tejas/Downloads/efinity/2023.2/arch/./sb_connectivity_subset.xdb'.
-BuildGraph process took 15.1237 seconds.
-	BuildGraph process took 12.24 seconds (approximately) in total CPU time.
-BuildGraph process virtual memory usage: begin = 1671.42 MB, end = 3371.88 MB, delta = 1700.46 MB
-BuildGraph process resident set memory usage: begin = 675.228 MB, end = 2302.75 MB, delta = 1627.52 MB
-	BuildGraph process peak resident set memory usage = 2302.75 MB
-check rr_graph process took 0.502447 seconds.
-	check rr_graph process took 0.48 seconds (approximately) in total CPU time.
-check rr_graph process virtual memory usage: begin = 3527.84 MB, end = 3553.84 MB, delta = 25.996 MB
-check rr_graph process resident set memory usage: begin = 2461.34 MB, end = 2487.71 MB, delta = 26.368 MB
-	check rr_graph process peak resident set memory usage = 2487.71 MB
-Generated 6654440 RR nodes and 25237336 RR edges
+BuildGraph process took 12.5698 seconds.
+	BuildGraph process took 11.96 seconds (approximately) in total CPU time.
+BuildGraph process virtual memory usage: begin = 1805.69 MB, end = 3443.49 MB, delta = 1637.8 MB
+BuildGraph process resident set memory usage: begin = 804.34 MB, end = 2447.86 MB, delta = 1643.52 MB
+	BuildGraph process peak resident set memory usage = 2447.86 MB
+check rr_graph process took 0.544024 seconds.
+	check rr_graph process took 0.51 seconds (approximately) in total CPU time.
+check rr_graph process virtual memory usage: begin = 3599.46 MB, end = 3625.57 MB, delta = 26.108 MB
+check rr_graph process resident set memory usage: begin = 2603.89 MB, end = 2629.88 MB, delta = 25.984 MB
+	check rr_graph process peak resident set memory usage = 2629.88 MB
+Generated 6654810 RR nodes and 25240386 RR edges
 This design has 0 global control net(s). See /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.route.rpt for details.
-Routing graph took 16.0905 seconds.
-	Routing graph took 13.08 seconds (approximately) in total CPU time.
-Routing graph virtual memory usage: begin = 1671.42 MB, end = 3553.84 MB, delta = 1882.42 MB
-Routing graph resident set memory usage: begin = 675.1 MB, end = 2488.22 MB, delta = 1813.12 MB
-	Routing graph peak resident set memory usage = 2488.22 MB
+Routing graph took 13.5233 seconds.
+	Routing graph took 12.81 seconds (approximately) in total CPU time.
+Routing graph virtual memory usage: begin = 1805.69 MB, end = 3573.58 MB, delta = 1767.89 MB
+Routing graph resident set memory usage: begin = 804.212 MB, end = 2577.95 MB, delta = 1773.74 MB
+	Routing graph peak resident set memory usage = 2629.88 MB
 ***** Ending stage routing graph generation *****
 
 ***** Beginning stage routing ... *****
+WARNING(1): No ports matched 'Clk'
+WARNING(2): [SDC /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc:1] No valid object(s) found for ''
+WARNING(3): [SDC /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc:1] No valid pin(s) found for clock
+WARNING(4): [SDC /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc:1] Unable to run 'create_clock' constraint due to warnings found
 
-No SDC file found.  Using default timing constraint of 1 ns.
-NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+SDC file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc' blank or does not contain valid constraint or not found.
+Using default timing constraint of 1 ns.
+
+SDC file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc' parsed successfully.
+3 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
 
 
  ---------      -------     --------------      -------------
  Iteration      Overuse     Crit Path (ns)      Calc Time (s)
  ---------      -------     --------------      -------------
-         1        12538              7.408               1.18
-         2         3493              7.323               1.02
-         3         1749              7.352              0.967
-         4          702              7.363               1.21
-         5          274              7.363               2.24
-         6          142              7.385               1.23
-         7           69              7.651               1.32
-         8           40              7.523               4.74
-         9           16              8.052               5.28
-        10            4              7.974               2.84
-        11            2              8.479               1.39
-        12            1              8.479               3.87
-        13            0              8.479               1.12
+         1        24582              8.008                1.9
+         2         5557              8.008               1.52
+         3         2654              8.008               1.38
+         4          970              8.008               1.36
+         5          316              8.008              0.922
+         6          134               8.11              0.575
+         7           73              8.008               0.47
+         8           23              8.209              0.377
+         9           11              8.209              0.366
+        10            7              8.209              0.345
+        11            6              8.209              0.388
+        12            0              8.209              0.356
 
-Successfully routed netlist after 13 routing iterations and 69496955 heapops
+Successfully routed netlist after 12 routing iterations and 40668323 heapops
 Completed net delay value cross check successfully.
 
 ***** Beginning stage routing check ... *****
 ***** Ending stage routing check *****
 
 
-Serial number (magic cookie) for the routing is: 608434196
+Serial number (magic cookie) for the routing is: 147294859
 Netlist fully routed.
 
 Successfully created FPGA route file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.route'
-Routing took 30.4186 seconds.
-	Routing took 30.06 seconds (approximately) in total CPU time.
-Routing virtual memory usage: begin = 3553.84 MB, end = 3553.84 MB, delta = 0 MB
-Routing resident set memory usage: begin = 2488.22 MB, end = 2513.03 MB, delta = 24.808 MB
-	Routing peak resident set memory usage = 2876.94 MB
+Routing took 11.5466 seconds.
+	Routing took 12.21 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 3573.58 MB, end = 3573.58 MB, delta = 0 MB
+Routing resident set memory usage: begin = 2577.95 MB, end = 2578.13 MB, delta = 0.184 MB
+	Routing peak resident set memory usage = 2960.41 MB
 ***** Ending stage routing *****
 
 ***** Beginning stage final timing analysis ... *****
+WARNING(5): No ports matched 'Clk'
+WARNING(6): [SDC /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc:1] No valid object(s) found for ''
+WARNING(7): [SDC /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc:1] No valid pin(s) found for clock
+WARNING(8): [SDC /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc:1] Unable to run 'create_clock' constraint due to warnings found
 
-No SDC file found.  Using default timing constraint of 1 ns.
-NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+SDC file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc' blank or does not contain valid constraint or not found.
+Using default timing constraint of 1 ns.
+
+SDC file '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/constraint.sdc' parsed successfully.
+3 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
 
 
 Cross clock domain timing relationship was detected. Refer to the clocks section of the timing report for more details. You can use set_clock_groups to control how clocks are analyzed.
 Maximum possible analyzed clocks frequency
   Clock Name   Period (ns)  Frequency (MHz)     Edge
-clk               7.850        127.389         (R-R)
-jtag_inst1_TCK    8.599        116.293         (R-R)
+clk               8.329        120.062         (R-R)
+jtag_inst1_TCK    7.616        131.303         (R-R)
 
-Geomean max period: 8.216
+Geomean max period: 7.965
 
 Setup (Max) Clock Relationship
   Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
- clk              clk                  1.000            -6.850           (R-R)
- clk              jtag_inst1_TCK       1.000             0.109           (R-R)
- jtag_inst1_TCK   clk                  1.000           -10.164           (R-R)
- jtag_inst1_TCK   jtag_inst1_TCK       1.000            -7.599           (R-R)
+ clk              clk                  1.000            -7.329           (R-R)
+ clk              jtag_inst1_TCK       1.000             0.449           (R-R)
+ jtag_inst1_TCK   clk                  1.000            -9.770           (R-R)
+ jtag_inst1_TCK   jtag_inst1_TCK       1.000            -6.616           (R-R)
 
 Hold (Min) Clock Relationship
   Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
  clk              clk                  0.000             0.119           (R-R)
- clk              jtag_inst1_TCK       0.000            -1.534           (R-R)
+ clk              jtag_inst1_TCK       0.000            -1.458           (R-R)
  jtag_inst1_TCK   clk                  0.000             2.148           (R-R)
  jtag_inst1_TCK   jtag_inst1_TCK       0.000             0.307           (R-R)
 
-WARNING(1): Clock domain between clk (rising) and clk (rising) may not meet (slack: -6.850 ns) the setup (max) timing requirement
-WARNING(2): Clock domain between jtag_inst1_TCK (rising) and clk (rising) may not meet (slack: -10.164 ns) the setup (max) timing requirement
-WARNING(3): Clock domain between jtag_inst1_TCK (rising) and jtag_inst1_TCK (rising) may not meet (slack: -7.599 ns) the setup (max) timing requirement
+WARNING(9): Clock domain between clk (rising) and clk (rising) may not meet (slack: -7.329 ns) the setup (max) timing requirement
+WARNING(10): Clock domain between jtag_inst1_TCK (rising) and clk (rising) may not meet (slack: -9.770 ns) the setup (max) timing requirement
+WARNING(11): Clock domain between jtag_inst1_TCK (rising) and jtag_inst1_TCK (rising) may not meet (slack: -6.616 ns) the setup (max) timing requirement
 
-WARNING(4): Clock domain between clk (rising) and jtag_inst1_TCK (rising) may not meet (slack: -1.534 ns) the hold (min) timing requirement
+WARNING(12): Clock domain between clk (rising) and jtag_inst1_TCK (rising) may not meet (slack: -1.458 ns) the hold (min) timing requirement
 
 Write Timing Report to "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.timing.rpt" ...
-final timing analysis took 0.408273 seconds.
-	final timing analysis took 0.31 seconds (approximately) in total CPU time.
-final timing analysis virtual memory usage: begin = 3553.84 MB, end = 3553.84 MB, delta = 0 MB
-final timing analysis resident set memory usage: begin = 2519.43 MB, end = 2521.09 MB, delta = 1.664 MB
-	final timing analysis peak resident set memory usage = 2876.94 MB
+final timing analysis took 0.543411 seconds.
+	final timing analysis took 0.48 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 3573.58 MB, end = 3573.58 MB, delta = 0 MB
+final timing analysis resident set memory usage: begin = 2578.13 MB, end = 2578.28 MB, delta = 0.144 MB
+	final timing analysis peak resident set memory usage = 2960.41 MB
 ***** Ending stage final timing analysis *****
 
 ***** Beginning stage bitstream generation ... *****
 Reading core interface constraints from '/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.csv'.
 Successfully processed interface constraints file "/home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/outflow/WS2812_Protocol.interface.csv".
 Finished writing bitstream file /home/tejas/Documents/Vicharak/FPGA_Implementation/WS2812_Interfacing/work_pnr/WS2812_Protocol.lbf.
-Bitstream generation took 2.2887 seconds.
-	Bitstream generation took 2.21 seconds (approximately) in total CPU time.
-Bitstream generation virtual memory usage: begin = 3553.84 MB, end = 3553.84 MB, delta = 0 MB
-Bitstream generation resident set memory usage: begin = 2521.09 MB, end = 2522.48 MB, delta = 1.392 MB
-	Bitstream generation peak resident set memory usage = 2876.94 MB
+Bitstream generation took 2.33217 seconds.
+	Bitstream generation took 2.23 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 3573.58 MB, end = 3612.05 MB, delta = 38.472 MB
+Bitstream generation resident set memory usage: begin = 2578.28 MB, end = 2616.99 MB, delta = 38.712 MB
+	Bitstream generation peak resident set memory usage = 2960.41 MB
 ***** Ending stage bitstream generation *****
 
-The entire flow of EFX_PNR took 63.7212 seconds.
-	The entire flow of EFX_PNR took 68.53 seconds (approximately) in total CPU time.
-The entire flow of EFX_PNR virtual memory usage: begin = 172.916 MB, end = 2618.05 MB, delta = 2445.14 MB
-The entire flow of EFX_PNR resident set memory usage: begin = 24.576 MB, end = 1605.54 MB, delta = 1580.97 MB
-	The entire flow of EFX_PNR peak resident set memory usage = 2876.94 MB
+The entire flow of EFX_PNR took 49.7769 seconds.
+	The entire flow of EFX_PNR took 67.69 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 172.916 MB, end = 2672.9 MB, delta = 2499.98 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 24.704 MB, end = 1677.84 MB, delta = 1653.13 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 2960.41 MB
